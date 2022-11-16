@@ -21,8 +21,17 @@
   justify-content: center;
 }
 
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
 .flex-ai-c {
   align-items: center;
+}
+
+/* LAYOUT UTILITIES */
+.padding-main {
+  padding: 0 3rem;
 }
 
 /* RESET */
