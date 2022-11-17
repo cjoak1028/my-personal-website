@@ -1,0 +1,16 @@
+.padding-main {
+    padding: 0 3rem;
+}
+
+.section {
+    margin: 7rem 0;
+}
+
+.divider {
+    display: block;
+    width: 1.1rem;
+    height: 1.1rem;
+    background-color: var(--c-main);
+    border-radius: 50%;
+    margin: auto;
+}

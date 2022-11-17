@@ -2,10 +2,12 @@
 :root {
   /* COLORS */
   --c-main: #373A3C;
+  --c-sub: #7B7B7B;
 
   /* FONTS */
   --f-logo: 'Noto Sans', sans-serif;
-
+  --f-header: Georgia, 'Times New Roman', Times, serif;
+  --f-main: 'Roboto', sans-serif;
 }
 
 /* FLEX UTILITIES */
@@ -29,11 +31,6 @@
   align-items: center;
 }
 
-/* LAYOUT UTILITIES */
-.padding-main {
-  padding: 0 3rem;
-}
-
 /* RESET */
 html {
   box-sizing: border-box;
@@ -43,10 +40,17 @@ html {
 
 body {
   min-height: 100%;
+  font-family: var(--f-main);
 }
+
 
 *, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+
+/* TYPOGRAPHY */
+h1, h2 {
+  font-family: var(--f-header);
 }
