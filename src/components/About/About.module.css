@@ -1,0 +1,19 @@
+#work-link {
+    /* float: right; */
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+#arrow {
+    margin-left: .8rem;
+}
+
+#work-link:hover {
+    opacity: 70%;
+    transition: .2s;
+}
+
+#work-link:hover #arrow {
+    transform: translateX(.5rem);
+    transition: .2s;
+}

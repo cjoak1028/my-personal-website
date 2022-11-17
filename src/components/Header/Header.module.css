@@ -15,4 +15,5 @@
     font-weight: 600;
     font-family: var(--f-logo);
     letter-spacing: .2rem;
+    margin-bottom: 0;
 }

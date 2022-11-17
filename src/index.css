@@ -27,8 +27,17 @@
   justify-content: space-between;
 }
 
+.flex-jc-fe {
+  justify-content: flex-end;
+}
+
 .flex-ai-c {
   align-items: center;
+}
+
+/* LAYOUT */
+.ta-right {
+  text-align: right;
 }
 
 /* RESET */
@@ -53,4 +62,38 @@ body {
 /* TYPOGRAPHY */
 h1, h2 {
   font-family: var(--f-header);
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 100;
+  margin-bottom: 1.2rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 100;
+  max-width: 28rem;
+  margin: auto;
+  margin-bottom: 3rem;
+  color: var(--c-sub);
+}
+
+p {
+  font-size: 1.8rem;
+  color: var(--c-sub);
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+a {
+  font-size: 1.6rem;
+  color: black;
+  opacity: 40%;
 }
