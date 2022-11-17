@@ -1,0 +1,55 @@
+#skills>p {
+    color: var(--c-main);
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+#skills-list {
+    list-style: none;
+    columns: 2;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--c-sub);
+    margin-bottom: 1.2rem;
+}
+
+#skills-list li {
+    margin-bottom: 1rem;
+}
+
+#skills-list li span {
+    margin-right: .5rem;
+}
+
+.experience {
+    background-color: var(--c-main);
+    color: #FCFAFA;
+    padding: 2.5rem 3rem;
+}
+
+.experience-title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: .6rem;
+}
+
+.experience-date {
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+    color: #D6D6D6;
+    font-weight: 100;
+}
+
+.experience-company {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.experience-description {
+    font-size: 1.4rem;
+    color: #D6D6D6;
+    margin-bottom: 0;
+    font-weight: 100;
+    line-height: 1.8rem;
+}
