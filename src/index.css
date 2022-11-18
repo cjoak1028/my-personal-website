@@ -5,6 +5,7 @@
   --c-sub: #7B7B7B;
 
   /* FONTS */
+  --f-button: 'Fira Code', monospace;
   --f-logo: 'Noto Sans', sans-serif;
   --f-header: Georgia, 'Times New Roman', Times, serif;
   --f-main: 'Roboto', sans-serif;

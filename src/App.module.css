@@ -3,7 +3,7 @@
 }
 
 .section {
-    margin: 7rem 0;
+    margin: 12rem 0;
 }
 
 .divider {
@@ -13,4 +13,34 @@
     background-color: var(--c-main);
     border-radius: 50%;
     margin: auto;
+}
+
+#attribution {
+    margin: auto;
+    text-align: center;
+    padding-bottom: .2rem;
+}
+
+#attribution p {
+    font-family: var(--f-button);
+    font-size: 1.2rem;
+    color: var(--c-main);
+    font-weight: 500;
+}
+
+#links {
+    margin-bottom: 1.3rem;
+}
+
+#links img {
+    width: 2rem;
+    height: auto;
+}
+
+#links a {
+    opacity: 1;
+}
+
+#links a:not(:last-child) {
+    margin-right: 2rem;
 }
