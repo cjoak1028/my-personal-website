@@ -48,6 +48,12 @@ html {
   font-size: 62.5%;
 }
 
+@media screen and (min-width: 37.5em) {
+  html {
+    font-size: 90%;
+  }
+}
+
 body {
   min-height: 100%;
   font-family: var(--f-main);
@@ -97,4 +103,14 @@ a {
   font-size: 1.6rem;
   color: black;
   opacity: 40%;
+}
+
+@media screen and (min-width: 65em) {
+  html {
+    font-size: 100%;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
 }

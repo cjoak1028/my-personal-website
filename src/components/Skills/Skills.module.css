@@ -10,7 +10,13 @@
     font-size: 1.4rem;
     font-weight: 300;
     color: var(--c-sub);
-    margin-bottom: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 50em) {
+    #skills-list {
+        columns: 3;
+    }
 }
 
 #skills-list li {

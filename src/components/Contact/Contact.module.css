@@ -8,7 +8,7 @@
 #contact-form input, textarea {
     border: none;
     background-color: var(--c-main);
-    padding: 1.7rem 2rem;
+    padding: 1.7rem 1.5rem;
     color: rgb(255, 208, 0);
     font-family: var(--f-main);
     font-size: 1.2rem;

@@ -1,6 +1,13 @@
-#project-gallery {
+#projects-gallery {
     display: grid;
     grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 50em) {
+    #projects-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .project {
@@ -16,7 +23,7 @@
 
 #project-1 p {
     color: white;
-    font-size: 3.2rem;
+    font-size: 32px;
     font-family: 'Antonio', sans-serif;
     font-weight: 500;
     text-transform: uppercase;
@@ -33,7 +40,7 @@
 #project-3 p {
     color: black;
     font-family: 'Pacifico', cursive, 'Roboto';
-    font-size: 3.2rem;
+    font-size: 32px;
 }
 
 #project-4 {
