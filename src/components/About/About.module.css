@@ -2,6 +2,7 @@
     /* float: right; */
     margin-right: 1rem;
     cursor: pointer;
+    opacity: 40%;
 }
 
 #arrow {
@@ -16,4 +17,10 @@
 #work-link:hover #arrow {
     transform: translateX(.5rem);
     transition: .2s;
+}
+
+@media screen and (min-width: 65em) {
+    #about {
+        width: 60%;
+    }
 }

@@ -50,3 +50,9 @@
 #links a:not(:last-child) {
     margin-right: 2rem;
 }
+
+@media screen and (min-width: 65em) {
+    #links {
+        display: none;
+    }
+}

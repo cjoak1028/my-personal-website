@@ -1,11 +1,12 @@
 #header {
-    height: 8rem;
     padding-right: 3rem;
 }
 
 #logo-container {
     width: 8rem;
-    height: 100%;
+    max-width: 6.5em;
+    height: 8rem;
+    max-height: 6.5em;
     background-color: var(--c-main);
 }
 

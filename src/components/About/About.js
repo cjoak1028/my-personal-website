@@ -4,7 +4,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 const About = () => {
   return (
-    <div>
+    <div id={styles.about}>
       <h2>I'm CJ</h2>
       <p>
         I survived U of T, endured tutorial hell, and built a number of things
