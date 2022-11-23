@@ -12,8 +12,6 @@ const Sidebar = () => {
           <img src="/assets/logos/linkedin.png" alt="linkedin logo" />
         </a>
         <span></span>
-        <span></span>
-        <span></span>
       </div>
     </div>
   );

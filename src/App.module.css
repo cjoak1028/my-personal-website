@@ -15,40 +15,44 @@
 .divider {
     display: block;
     width: 1.1rem;
+    max-width: 0.7em;
     height: 1.1rem;
+    max-height: 0.7em;
     background-color: var(--c-main);
-    border-radius: 50%;
     margin: auto;
+    transform: rotate(45deg)
 }
 
 #attribution {
     margin: auto;
     text-align: center;
-    padding-bottom: .2rem;
 }
 
 #attribution p {
     font-family: var(--f-button);
-    font-size: 1.2rem;
+    font-size: .75em;
     color: var(--c-main);
     font-weight: 500;
+    margin-bottom: 1rem;
 }
 
 #links {
-    margin-bottom: 1.3rem;
+    margin-bottom: .5rem;
 }
 
 #links img {
-    width: 2rem;
+    width: 1.3em;
     height: auto;
 }
 
-#links a {
-    opacity: 1;
+#links *:not(:last-child) {
+    margin-right: 1.2rem;
 }
 
-#links a:not(:last-child) {
-    margin-right: 2rem;
+#links span {
+    height: 1px;
+    width: 100%;
+    background-color: var(--c-main);
 }
 
 @media screen and (min-width: 65em) {

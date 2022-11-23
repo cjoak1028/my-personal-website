@@ -7,24 +7,22 @@
 #sidebar-content {
     position: fixed;
     bottom: 0;
-    margin-bottom: 2rem;
 }
 
 #sidebar-content img {
-    width: 2rem;
+    width: 1.3em;
     height: auto;
 }
 
 #sidebar-content span {
     display: block;
-    width: .5rem;
-    height: .5rem;
-    border-radius: 50%;
+    width: 1px;
+    height: 7rem;
     background-color: var(--c-main);
 }
 
 #sidebar-content>*:not(:last-child) {
-    margin-bottom: 1rem;
+    margin-bottom: .6rem;
 }
 
 @media screen and (min-width: 65em) {

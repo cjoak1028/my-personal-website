@@ -35,13 +35,15 @@ function App() {
             <Contact />
           </div>
           <div id={styles.attribution}>
-            <div id={styles.links}>
+            <div id={styles.links} className="flex flex-ai-c flex-jc-c">
+              <span></span>
               <a href="https://github.com/cjoak1028">
                 <img src="/assets/logos/github.png" alt="github logo" />
               </a>
               <a href="https://www.linkedin.com/in/cj-kim-966351255/">
                 <img src="/assets/logos/linkedin.png" alt="linkedin logo" />
               </a>
+              <span></span>
             </div>
             <p>Designed + Built by CJ KIM</p>
           </div>
