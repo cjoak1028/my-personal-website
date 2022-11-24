@@ -3,16 +3,14 @@
 }
 
 #logo-container {
-    width: 8rem;
-    max-width: 6.5em;
-    height: 8rem;
-    max-height: 6.5em;
+    width: clamp(6rem, 9vw, 9rem);
+    height: clamp(6rem, 9vw, 9rem);
     background-color: var(--c-main);
 }
 
 #logo-container p {
     color: white;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 2vw, 2rem);
     font-weight: 600;
     font-family: var(--f-logo);
     letter-spacing: .2rem;
