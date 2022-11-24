@@ -10,7 +10,7 @@
 }
 
 .section {
-    margin: 12rem 0;
+    margin: clamp(12rem, 20vw, 20rem) 0;
 }
 
 .divider {
