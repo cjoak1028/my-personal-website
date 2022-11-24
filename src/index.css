@@ -70,7 +70,7 @@ h1, h2 {
 }
 
 h1 {
-  font-size: clamp(5rem, 8vw, 10rem);
+  font-size: clamp(5rem, 9vw, 10rem);
   font-weight: 100;
   margin-bottom: 1.5rem;
 }
@@ -82,9 +82,9 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(1.8rem, 2vw, 2.4rem);
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
   font-weight: 100;
-  width: clamp(28rem, 30vw, 35rem);
+  width: clamp(28rem, 35vw, 34rem);
   margin: auto;
   margin-bottom: 3rem;
   color: var(--c-sub);
