@@ -21,8 +21,8 @@
     transition: .2s;
 }
 
-@media screen and (min-width: 65em) {
+/* @media screen and (min-width: 65em) {
     #about {
         width: 60%;
     }
-}
+} */

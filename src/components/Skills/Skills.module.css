@@ -13,12 +13,6 @@
     margin-bottom: 3rem;
 }
 
-@media screen and (min-width: 50em) {
-    #skills-list {
-        columns: 3;
-    }
-}
-
 #skills-list li {
     margin-bottom: 1rem;
 }
@@ -58,4 +52,23 @@
     margin-bottom: 0;
     font-weight: 100;
     line-height: 1.8rem;
+}
+
+@media screen and (min-width: 50em) {
+    #skills-list {
+        columns: 3;
+    }
+}
+
+@media screen and (min-width: 65em) {
+    #flex-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #skills-list {
+        columns: 2;
+    }
 }

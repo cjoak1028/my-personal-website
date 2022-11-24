@@ -48,14 +48,8 @@
 /* RESET */
 html {
   box-sizing: border-box;
-  height: 100%;
+  min-height: 100%;
   font-size: 62.5%;
-}
-
-@media screen and (min-width: 37.5em) {
-  html {
-    font-size: 85%;
-  }
 }
 
 body {
@@ -76,7 +70,7 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: clamp(5rem, 8vw, 10rem);
   font-weight: 100;
   margin-bottom: 1.5rem;
 }
@@ -88,9 +82,9 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: clamp(1.8rem, 2vw, 2.4rem);
   font-weight: 100;
-  max-width: 28rem;
+  width: clamp(28rem, 30vw, 35rem);
   margin: auto;
   margin-bottom: 3rem;
   color: var(--c-sub);
@@ -101,14 +95,4 @@ p {
   color: var(--c-sub);
   font-weight: 300;
   margin-bottom: 1.5rem;
-}
-
-@media screen and (min-width: 65em) {
-  /* html {
-    font-size: 95%;
-  } */
-
-  h1 {
-    font-size: 5rem;
-  }
 }

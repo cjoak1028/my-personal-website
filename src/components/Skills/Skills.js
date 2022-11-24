@@ -4,34 +4,38 @@ import styles from "./Skills.module.css";
 const Skills = () => {
   return (
     <div id={styles.skills}>
-      <h2>What I can do</h2>
-      <p>I have experience with the following technologies:</p>
-      <ul id={styles["skills-list"]}>
-        <li>
-          <span>&gt;</span> HTML
-        </li>
-        <li>
-          <span>&gt;</span> CSS/SCSS/SASS
-        </li>
-        <li>
-          <span>&gt;</span> JavaScript (ES6+)
-        </li>
-        <li>
-          <span>&gt;</span> React/React Native
-        </li>
-        <li>
-          <span>&gt;</span> Node.js
-        </li>
-        <li>
-          <span>&gt;</span> Express.js
-        </li>
-        <li>
-          <span>&gt;</span> MongoDB
-        </li>
-        <li>
-          <span>&gt;</span> Python
-        </li>
-      </ul>
+      <div id={styles["flex-wrapper"]}>
+        <h2>What I can do</h2>
+        <div>
+          <p>I have experience with the following technologies:</p>
+          <ul id={styles["skills-list"]}>
+            <li>
+              <span>&gt;</span> HTML
+            </li>
+            <li>
+              <span>&gt;</span> CSS/SCSS/SASS
+            </li>
+            <li>
+              <span>&gt;</span> JavaScript (ES6+)
+            </li>
+            <li>
+              <span>&gt;</span> React/React Native
+            </li>
+            <li>
+              <span>&gt;</span> Node.js
+            </li>
+            <li>
+              <span>&gt;</span> Express.js
+            </li>
+            <li>
+              <span>&gt;</span> MongoDB
+            </li>
+            <li>
+              <span>&gt;</span> Python
+            </li>
+          </ul>
+        </div>
+      </div>
       <div className={styles["experience"]}>
         <h4 className={styles["experience-title"]}>
           Full-Stack Web Developer Intern
