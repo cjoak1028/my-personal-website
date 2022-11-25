@@ -4,9 +4,12 @@ import styles from "./Contact.module.css";
 const Contact = () => {
   return (
     <div id={styles.contact}>
-      <h2>Say hi!</h2>
+      <div id={styles["contact-title"]} className="flex flex-ai-c">
+        <h2>Contact Me</h2>
+        <hr />
+      </div>
       <p>
-        I’m actively searching for opportunities to apply my skills and
+        I’m currently searching for opportunities where I can test my skills and
         knowledge in web development all the while meeting new people and having
         fun!
       </p>

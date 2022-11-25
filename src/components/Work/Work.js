@@ -3,8 +3,11 @@ import styles from "./Work.module.css";
 
 const Work = () => {
   return (
-    <div>
-      <h2>Some of my work</h2>
+    <div id={styles.work}>
+      <div id={styles["work-title"]} className="flex flex-ai-c">
+        <h2>My Work</h2>
+        <hr />
+      </div>
       <div id={styles["projects-gallery"]}>
         <div id={styles["project-1"]} className={styles.project}>
           <p>The Planets</p>

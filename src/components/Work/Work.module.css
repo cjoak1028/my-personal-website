@@ -1,13 +1,21 @@
+#work {
+    max-width: 77.4rem;
+    margin: auto;
+}
+
+#work>p {
+    color: var(--c-main);
+    font-size: clamp(1.3rem, 1.8vw, 1.8rem);
+    font-weight: 400;
+}
+
+#work-title {
+    margin-bottom: 2rem;
+}
+
 #projects-gallery {
     display: grid;
     grid-template-columns: 1fr;
-}
-
-@media screen and (min-width: 50em) {
-    #projects-gallery {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
 }
 
 .project {
@@ -45,4 +53,10 @@
 
 #project-4 {
     background-color: #5964E0;
+}
+
+@media screen and (min-width: 50em) {
+    #projects-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

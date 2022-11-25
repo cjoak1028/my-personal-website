@@ -76,10 +76,8 @@ h1 {
 }
 
 h2 {
-  /* font-size: 3rem; */
-  font-size: clamp(3rem, 7vw, 7rem);
+  font-size: clamp(3rem, 5vw, 5rem);
   font-weight: 100;
-  margin-bottom: 2rem;
 }
 
 h3 {
@@ -97,4 +95,10 @@ p {
   color: var(--c-sub);
   font-weight: 300;
   margin-bottom: 1.5rem;
+}
+
+hr {
+  flex: 1;
+  border-top: dotted 1px var(--c-sub);
+  margin-left: 2rem;
 }

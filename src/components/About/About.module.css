@@ -1,5 +1,10 @@
 #about {
     max-width: 77.4rem;
+    margin: auto;
+}
+
+#about-title {
+    margin-bottom: 2rem;
 }
 
 #work-link {

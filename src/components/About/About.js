@@ -5,10 +5,14 @@ import { BsArrowRight } from "react-icons/bs";
 const About = () => {
   return (
     <div id={styles.about}>
-      <h2>I'm CJ</h2>
+      <div id={styles["about-title"]} className="flex flex-ai-c">
+        <h2>About</h2>
+        <hr />
+      </div>
+      <p>My name is CJ.</p>
       <p>
-        I survived U of T, endured tutorial hell, and built a number of things
-        on the web.
+        I'm a U of T survivor and I endured tutorial hell and built a number of
+        things on the web.
       </p>
       <p>
         At the moment, my focus is on front-end development and creating the
