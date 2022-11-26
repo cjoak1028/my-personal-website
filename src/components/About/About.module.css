@@ -1,5 +1,5 @@
 #about {
-    max-width: 77.4rem;
+    max-width: 80rem;
     margin: auto;
 }
 
@@ -29,3 +29,10 @@
     transform: translateX(.5rem);
     transition: .2s;
 }
+
+/* @media screen and (min-width: 65em) {
+    #about {
+        position: relative;
+        left: -5%;
+    }
+} */

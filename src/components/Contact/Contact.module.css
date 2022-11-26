@@ -1,5 +1,5 @@
 #contact {
-    max-width: 77.4rem;
+    max-width: 80rem;
     margin: auto;
 }
 
@@ -77,3 +77,10 @@
         float: right;
     }
 }
+
+/* @media screen and (min-width: 65em) {
+    #contact {
+        position: relative;
+        left: 5%;
+    }
+} */

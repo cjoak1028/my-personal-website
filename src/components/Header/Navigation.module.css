@@ -20,9 +20,14 @@
 }
 
 #navigation a {
-    font-size: clamp(1.3rem, 1.2vw, 1.8rem);
+    font-size: clamp(1.3rem, 1.6vw, 1.8rem);
     color: var(--c-main);
     cursor: pointer;
+    opacity: 60%;
+}
+
+#navigation a:hover {
+    opacity: 100%;
 }
 
 @media screen and (min-width: 37.5em) {

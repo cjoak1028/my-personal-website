@@ -1,5 +1,5 @@
 #skills {
-    max-width: 77.4rem;
+    max-width: 80rem;
     margin: auto;
 }
 
@@ -80,6 +80,11 @@
 }
 
 @media screen and (min-width: 65em) {
+    /* #skills {
+        position: relative;
+        left: 5%;
+    } */
+
     #skills-list ul {
         columns: 3;
     }

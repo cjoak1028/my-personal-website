@@ -1,6 +1,7 @@
 #app-container {
     padding: 0 8%;
     flex: 1;
+    margin-top: clamp(6rem, 9vw, 9rem);
 }
 
 @media screen and (min-width: 37.5em) {
