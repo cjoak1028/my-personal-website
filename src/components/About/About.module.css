@@ -29,9 +29,3 @@
     transform: translateX(.5rem);
     transition: .2s;
 }
-
-/* @media screen and (min-width: 65em) {
-    #about {
-        width: 60%;
-    }
-} */

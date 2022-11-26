@@ -8,3 +8,9 @@
     width: 100%;
     background-color: var(--c-main);
 }
+
+@media screen and (min-width: 37.5em) {
+    #menu-button {
+        display: none;
+    }
+}

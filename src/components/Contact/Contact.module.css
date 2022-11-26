@@ -8,10 +8,11 @@
 }
 
 #contact p {
-    font-size: 1.4rem;
+    font-size: clamp(1.2rem, 1.5vw, 1.4rem);
     line-height: 1.8rem;
     letter-spacing: 0.1rem;
     margin-bottom: 1.2rem;
+    color: red;
 }
 
 #contact-form input, textarea {
@@ -55,4 +56,24 @@
     font-family: var(--f-button);
     font-weight: 500;
     font-size: 1.6rem;
+}
+
+#flex-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 50em) {
+    #flex-wrapper {
+        flex-direction: row;
+    }
+
+    #flex-wrapper>*:first-child {
+        margin-right: .6rem;
+    }
+
+    #contact-form button {
+        width: calc(50% - .6rem);
+        float: right;
+    }
 }

@@ -1,0 +1,32 @@
+#navigation {
+    display: none;
+    width: clamp(35rem, 40vw, 60rem);
+}
+
+#navigation ul {
+    list-style: none;
+}
+
+#navigation button {
+    background-color: transparent;
+    border: 1px solid var(--c-main);
+    padding: clamp(0.5rem, 1vw, 0.8rem) clamp(1rem, 1.5vw, 2rem);
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: clamp(1rem, 1.1vw, 1.5rem);
+    font-family: var(--f-button);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#navigation a {
+    font-size: clamp(1.3rem, 1.2vw, 1.8rem);
+    color: var(--c-main);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 37.5em) {
+    #navigation {
+        display: block;
+    }
+}

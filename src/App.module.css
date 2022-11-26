@@ -10,15 +10,13 @@
 }
 
 .section {
-    margin: clamp(12rem, 20vw, 20rem) 0;
+    margin: clamp(10rem, 15vw, 20rem) 0;
 }
 
 .divider {
     display: block;
-    width: 1.1rem;
-    max-width: 0.7em;
-    height: 1.1rem;
-    max-height: 0.7em;
+    width: clamp(0.7rem, 1vw, 1rem);
+    height: clamp(0.7rem, 1vw, 1rem);
     background-color: var(--c-main);
     margin: auto;
     transform: rotate(45deg)

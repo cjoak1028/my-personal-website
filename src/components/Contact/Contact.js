@@ -9,13 +9,14 @@ const Contact = () => {
         <hr />
       </div>
       <p>
-        I’m currently searching for opportunities where I can test my skills and
-        knowledge in web development all the while meeting new people and having
-        fun!
+        * I’m currently searching for new opportunities, so feel free to contact
+        me!
       </p>
       <form id={styles["contact-form"]}>
-        <input type="text" id="name" name="name" placeholder="Name" />
-        <input type="email" id="email" name="email" placeholder="Email" />
+        <div id={styles["flex-wrapper"]}>
+          <input type="text" id="name" name="name" placeholder="Name" />
+          <input type="email" id="email" name="email" placeholder="Email" />
+        </div>
         <input type="text" id="subject" name="subject" placeholder="Subject" />
         <textarea id="message" name="message" placeholder="Message" />
         <button type="submit">Send</button>
