@@ -61,11 +61,11 @@
 }
 
 .experience-description {
-    font-size: clamp(1.4rem, 1.5vw, 1.8rem);
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
     color: #D6D6D6;
     margin-bottom: 0;
     font-weight: 100;
-    line-height: clamp(1.8rem, 1.5vw, 2rem);
+    line-height: clamp(1.8rem, 3vw, 2.2rem);
 }
 
 @media screen and (min-width: 50em) {

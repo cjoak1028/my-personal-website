@@ -1,5 +1,5 @@
 #about {
-    max-width: 80rem;
+    max-width: 85rem;
     margin: auto;
 }
 
@@ -10,9 +10,10 @@
 #work-link {
     /* float: right; */
     margin-right: 1rem;
+    margin-top: 1.5rem;
     cursor: pointer;
     opacity: 40%;
-    font-size: clamp(1.6rem, 2vw, 2.2rem);
+    font-size: clamp(1.3rem, 1.6vw, 1.8rem);
     color: black;
 }
 
