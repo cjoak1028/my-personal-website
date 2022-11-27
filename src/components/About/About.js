@@ -10,8 +10,8 @@ const About = () => {
         <hr />
       </div>
       <p>
-        Hello! My name is CJ, and I'm a full-stack web developer currently based
-        in Toronto, Canada.
+        Yo! My name is Chang-Ju (but you can call me CJ), and I'm a full-stack
+        web developer currently residing in Toronto, Canada.
       </p>
       <p>
         I pursued a degree in Computer Science at the University of Toronto.
@@ -23,8 +23,8 @@ const About = () => {
         My eagerness to always be learning and improving myself has helped me
         endure countless online tutorials and partake in fascinating projects.
         Currently, I am focused on the front-end side of the web development
-        spectrum, experimenting with various tools and libraries such as React
-        to create awesome UI.
+        spectrum, experimenting with various tools and libraries to create
+        awesome UI.
       </p>
       <a id={styles["work-link"]} className="flex flex-ai-c flex-jc-fe">
         Check out some of my work <BsArrowRight id={styles.arrow} />

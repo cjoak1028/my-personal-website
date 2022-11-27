@@ -41,6 +41,10 @@
         text-align: left;
     }
 
+    #hero-text h3 {
+        margin: 0;
+    }
+
     #avatar-outline {
         margin: 0;
     }

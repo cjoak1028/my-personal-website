@@ -9,7 +9,7 @@ const Contact = () => {
         <hr />
       </div>
       <p>
-        * I’m currently searching for new opportunities, so feel free to contact
+        * I’m actively searching for new opportunities, so feel free to contact
         me!
       </p>
       <form id={styles["contact-form"]}>
