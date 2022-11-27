@@ -9,14 +9,22 @@ const About = () => {
         <h2>About</h2>
         <hr />
       </div>
-      <p>My name is CJ.</p>
       <p>
-        I'm a U of T survivor and I endured tutorial hell and built a number of
+        Hello! My name is CJ, and I'm a full-stack web developer currently based
+        in Toronto, Canada.
+      </p>
+      <p>
+        I pursued a degree in Computer Science at the University of Toronto.
+        While there, I had the privilege of interning as a full-stack web
+        developer at a start-up, where I discovered my passion for building
         things on the web.
       </p>
       <p>
-        At the moment, my focus is on front-end development and creating the
-        best user experience.
+        My eagerness to always be learning and improving myself has helped me
+        endure countless online tutorials and partake in fascinating projects.
+        Currently, I am focused on the front-end side of the web development
+        spectrum, experimenting with various tools and libraries such as React
+        to create awesome UI.
       </p>
       <a id={styles["work-link"]} className="flex flex-ai-c flex-jc-fe">
         Check out some of my work <BsArrowRight id={styles.arrow} />
