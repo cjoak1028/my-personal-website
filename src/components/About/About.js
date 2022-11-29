@@ -6,12 +6,12 @@ const About = () => {
   return (
     <div id={styles.about}>
       <div id={styles["about-title"]} className="flex flex-ai-c">
-        <h2>About</h2>
+        <h2>ABOUT</h2>
         <hr />
       </div>
       <p>
-        Yo! My name is Chang-Ju (but you can call me CJ), and I'm a full-stack
-        web developer currently residing in Toronto, Canada.
+        My name is Chang-Ju (but you can call me CJ), and I'm a full-stack web
+        developer currently based in Toronto, Canada.
       </p>
       <p>
         I pursued a degree in Computer Science at the University of Toronto.

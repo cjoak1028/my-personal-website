@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div id={styles.contact}>
       <div id={styles["contact-title"]} className="flex flex-ai-c">
-        <h2>Contact Me</h2>
+        <h2>CONTACT ME</h2>
         <hr />
       </div>
       <p>

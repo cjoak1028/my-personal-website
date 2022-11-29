@@ -65,19 +65,20 @@ body {
 }
 
 /* TYPOGRAPHY */
-h1, h2 {
+/* h1, h2 {
   font-family: var(--f-header);
-}
+} */
 
 h1 {
   font-size: clamp(5rem, 9vw, 8rem);
-  font-weight: 100;
+  font-weight: 400;
   margin-bottom: 1rem;
+  letter-spacing: 2px;
 }
 
 h2 {
   font-size: clamp(3rem, 5vw, 5rem);
-  font-weight: 100;
+  font-weight: 300;
 }
 
 h3 {
@@ -90,10 +91,10 @@ h3 {
 }
 
 h4 {
-  font-size: clamp(1.2rem, 2vw, 1.4rem);
-  font-weight: 400;
+  font-size: clamp(1.3rem, 2vw, 1.5rem);
+  font-weight: 300;
   margin-bottom: 0.1rem;
-  color: var(--c-sub);
+  color: var(--c-main);
 }
 
 p {

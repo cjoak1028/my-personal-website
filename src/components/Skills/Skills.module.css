@@ -1,5 +1,5 @@
 #skills {
-    max-width: 80rem;
+    max-width: 70rem;
     margin: auto;
 }
 
@@ -45,6 +45,7 @@
     font-size: clamp(1.6rem, 2vw, 2rem);
     font-weight: 500;
     margin-bottom: .6rem;
+    color: white;
 }
 
 .experience-date {
@@ -79,12 +80,7 @@
     }
 }
 
-@media screen and (min-width: 65em) {
-    /* #skills {
-        position: relative;
-        left: 5%;
-    } */
-
+@media screen and (min-width: 37.5em) {
     #skills-list ul {
         columns: 3;
     }
