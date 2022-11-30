@@ -5,7 +5,7 @@ import { BsArrowRight } from "react-icons/bs";
 const About = () => {
   return (
     <div id={styles.about}>
-      <div id={styles["about-title"]} className="flex flex-ai-c">
+      <div id={styles["about-title"]} className="flex flex-ai-c mb-title">
         <h2>ABOUT</h2>
         <hr />
       </div>

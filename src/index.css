@@ -40,9 +40,17 @@
   align-items: flex-end;
 }
 
+.flex-ai-sb {
+  align-items: space-between;
+}
+
 /* LAYOUT */
 .ta-right {
   text-align: right;
+}
+
+.mb-title {
+  margin-bottom: clamp(1.4rem, 2.2vw, 2.2rem);
 }
 
 /* RESET */
@@ -55,6 +63,7 @@ html {
 body {
   min-height: 100%;
   font-family: var(--f-main);
+  color: var(--c-main);
 }
 
 
@@ -78,7 +87,7 @@ h1 {
 
 h2 {
   font-size: clamp(3rem, 5vw, 5rem);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h3 {

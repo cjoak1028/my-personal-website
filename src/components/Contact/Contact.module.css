@@ -3,10 +3,6 @@
     margin: auto;
 }
 
-#contact-title {
-    margin-bottom: 2rem;
-}
-
 #contact p {
     font-size: clamp(1.2rem, 1.5vw, 1.4rem);
     line-height: 1.8rem;

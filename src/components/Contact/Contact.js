@@ -4,8 +4,8 @@ import styles from "./Contact.module.css";
 const Contact = () => {
   return (
     <div id={styles.contact}>
-      <div id={styles["contact-title"]} className="flex flex-ai-c">
-        <h2>CONTACT ME</h2>
+      <div id={styles["contact-title"]} className="flex flex-ai-c mb-title">
+        <h2>CONTACT</h2>
         <hr />
       </div>
       <p>

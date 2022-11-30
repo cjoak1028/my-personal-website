@@ -4,7 +4,7 @@ import styles from "./Skills.module.css";
 const Skills = () => {
   return (
     <div id={styles.skills}>
-      <div id={styles["skills-title"]} className="flex flex-ai-c">
+      <div id={styles["skills-title"]} className="flex flex-ai-c mb-title">
         <h2>SKILLS</h2>
         <hr />
       </div>
