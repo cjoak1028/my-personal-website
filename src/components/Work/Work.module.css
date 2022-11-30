@@ -6,10 +6,10 @@
 .work-gallery {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: clamp(1rem, 1.8vw, 1.8rem);
 }
 
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 45em) {
     .work-gallery {
         grid-template-columns: repeat(2, 1fr);
     }

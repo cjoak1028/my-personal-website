@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Skills.module.css";
+import { BiRightArrow } from "react-icons/bi";
 
 const Skills = () => {
   return (
@@ -11,29 +12,33 @@ const Skills = () => {
       <div id={styles["skills-list"]}>
         <p>I have experience with the following technologies:</p>
         <ul id={styles["skills-list"]}>
-          <li>
-            <span>&gt;</span> HTML
+          <li className="flex flex-ai-c">
+            <BiRightArrow className={styles.bullet} /> HTML
           </li>
-          <li>
-            <span>&gt;</span> CSS/SCSS/SASS
+          <li className="flex flex-ai-c">
+            <BiRightArrow className={styles.bullet} />
+            CSS/SCSS/SASS
           </li>
-          <li>
-            <span>&gt;</span> JavaScript (ES6+)
+          <li className="flex flex-ai-c">
+            <BiRightArrow className={styles.bullet} />
+            JavaScript (ES6+)
           </li>
-          <li>
-            <span>&gt;</span> React/React Native
+          <li className="flex flex-ai-c">
+            <BiRightArrow className={styles.bullet} />
+            React/React Native
           </li>
-          <li>
-            <span>&gt;</span> Node.js
+          <li className="flex flex-ai-c">
+            <BiRightArrow className={styles.bullet} /> Node.js
           </li>
-          <li>
-            <span>&gt;</span> Express.js
+          <li className="flex flex-ai-c">
+            <BiRightArrow className={styles.bullet} />
+            Express.js
           </li>
-          <li>
-            <span>&gt;</span> MongoDB
+          <li className="flex flex-ai-c">
+            <BiRightArrow className={styles.bullet} /> MongoDB
           </li>
-          <li>
-            <span>&gt;</span> Python
+          <li className="flex flex-ai-c">
+            <BiRightArrow className={styles.bullet} /> Python
           </li>
         </ul>
       </div>

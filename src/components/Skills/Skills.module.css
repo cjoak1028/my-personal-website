@@ -65,6 +65,13 @@
     line-height: clamp(1.8rem, 3vw, 2.2rem);
 }
 
+.bullet {
+    width: clamp(1.4rem, 1.6vw, 1.6rem);
+    height: auto;
+    margin-right: 6px;
+    color: #10855c;
+}
+
 @media screen and (min-width: 50em) {
     #skills-list ul {
         columns: 3;

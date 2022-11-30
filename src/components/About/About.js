@@ -9,10 +9,13 @@ const About = () => {
         <h2>ABOUT</h2>
         <hr />
       </div>
-      <p>
-        My name is Chang-Ju (but you can call me CJ), and I'm a full-stack web
-        developer currently based in Toronto, Canada.
-      </p>
+      <div className={`${styles["first-paragraph"]} flex`}>
+        <span></span>
+        <p>
+          Hello! My name is Chang-Ju (but you can call me CJ), and I'm a
+          full-stack web developer currently based in Toronto, Canada.
+        </p>
+      </div>
       <p>
         I pursued a degree in Computer Science at the University of Toronto.
         While there, I had the privilege of interning as a full-stack web

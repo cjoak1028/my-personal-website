@@ -27,6 +27,16 @@
     transition: .2s;
 }
 
+.first-paragraph {
+    border-left: 3px solid #10855c;
+    padding-left: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.first-paragraph p {
+    margin: 0;
+}
+
 /* @media screen and (min-width: 65em) {
     #about {
         position: relative;
