@@ -14,6 +14,11 @@
     height: auto;
 }
 
+#sidebar-content img:hover {
+    opacity: 50%;
+    transition: .2s;
+}
+
 #sidebar-content span {
     display: block;
     width: 1px;

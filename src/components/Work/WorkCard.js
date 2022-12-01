@@ -21,7 +21,11 @@ const WorkCard = ({ data }) => {
           </div>
           <div className={`${styles["work-links"]} flex flex-ai-c`}>
             <a href={data.repo} className={styles["work-link"]}>
-              <img src="/assets/logos/github.png" alt="github logo" />
+              <img
+                className={styles["github-logo"]}
+                src="/assets/logos/github.png"
+                alt="github logo"
+              />
             </a>
             <a href={data.link} className={styles["work-link"]}>
               <BiLinkExternal

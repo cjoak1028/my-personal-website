@@ -1,6 +1,7 @@
 .work-card {
-    background-color: #FAFAFA;
+    background-color: var(--c-bg-sub);
     padding: clamp(2rem, 2vw, 2.5rem);
+    border-left: 3px solid var(--c-border);
 }
 
 .work-card h4 {
@@ -31,7 +32,7 @@
 .tech {
     font-size: clamp(1rem, 1.2vw, 1.2rem);
     font-weight: 500;
-    color: #10855c;
+    color: var(--c-main);
     margin-bottom: 0;
 }
 
@@ -39,22 +40,18 @@
     margin-right: 1.2rem;
 }
 
-.work-links a {
-    opacity: 0.7;
+.work-link {
+    opacity: 0.6;
+    transition: .2s;
 }
 
 .work-link:not(:last-of-type) {
     margin-right: clamp(1rem, 1.5vw, 1.5rem);
 }
 
-.work-link img {
+.github-logo {
     width: clamp(1.6rem, 2vw, 2rem);
     height: auto;
-    opacity: 0.8;
-}
-
-.work-link:hover img {
-    opacity: 1;
 }
 
 .work-link:hover {
@@ -73,12 +70,13 @@
 }
 
 @media screen and (max-width: 21.5em) {
-    .work-card {
+    /* .work-card {
         text-align: center;
-    }
+    } */
 
     .flex-wrapper {
         flex-direction: column;
+        align-items: flex-start;
     }
 
     .work-technologies {

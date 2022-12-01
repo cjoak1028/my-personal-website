@@ -32,44 +32,44 @@
 }
 
 .experience {
-    background-color: var(--c-main);
-    color: #FCFAFA;
-    padding: 2.5rem 3rem;
+    background-color: var(--c-bg-sub);
+    color: var(--c-main);
+    padding: clamp(2rem, 2vw, 2.5rem);
+    border-left: 3px solid var(--c-border);
 }
 
 .experience-title {
     font-size: clamp(1.6rem, 2vw, 2rem);
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: .6rem;
-    color: white;
 }
 
 .experience-date {
     font-size: clamp(1.4rem, 1.5vw, 1.8rem);
     margin-bottom: .5rem;
-    color: #D6D6D6;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .experience-company {
     font-size: clamp(1.4rem, 1.5vw, 1.8rem);
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 1rem;
+    color: var(--c-sub);
 }
 
 .experience-description {
     font-size: clamp(1.2rem, 2vw, 1.6rem);
-    color: #D6D6D6;
     margin-bottom: 0;
-    font-weight: 100;
+    font-weight: 300;
     line-height: clamp(1.8rem, 3vw, 2.2rem);
 }
 
 .bullet {
-    width: clamp(1.4rem, 1.6vw, 1.6rem);
+    width: clamp(1.4rem, 1.5vw, 1.5rem);
     height: auto;
     margin-right: 6px;
-    color: #10855c;
+    /* color: #10855c; */
+    color: var(--c-sub);
 }
 
 @media screen and (min-width: 50em) {

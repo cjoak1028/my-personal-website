@@ -28,7 +28,8 @@
 }
 
 .first-paragraph {
-    border-left: 3px solid #10855c;
+    /* border-left: 3px solid #10855c; */
+    border-left: 3px solid var(--c-border);
     padding-left: 12px;
     margin-bottom: 1.5rem;
 }

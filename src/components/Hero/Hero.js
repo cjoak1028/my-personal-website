@@ -7,7 +7,9 @@ const Hero = () => {
     <div id={styles.hero}>
       <div id={styles["hero-text"]}>
         <h4>Yo, my name is</h4>
-        <h1>CJ KIM</h1>
+        <h1>
+          CJ <span className={styles["last-name"]}>KIM</span>
+        </h1>
         <h3>I'm a Full-Stack Web Developer based in Toronto, Canada.</h3>
       </div>
       <div id={styles["avatar-outline"]} className="flex flex-jc-c flex-ai-c">

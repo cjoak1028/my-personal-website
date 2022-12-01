@@ -45,6 +45,11 @@
     height: auto;
 }
 
+#links img:hover {
+    opacity: 50%;
+    transition: .2s;
+}
+
 #links *:not(:last-child) {
     margin-right: 1.2rem;
 }

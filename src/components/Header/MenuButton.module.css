@@ -1,6 +1,12 @@
 #menu-button {
     width: 2.3rem;
     height: 1.7rem;
+    cursor: pointer;
+}
+
+#menu-button:hover {
+    opacity: 60%;
+    transition: .2s;
 }
 
 #menu-button span {

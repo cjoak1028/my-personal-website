@@ -3,10 +3,13 @@
   /* COLORS */
   --c-main: #373A3C;
   --c-sub: #7B7B7B;
+  --c-bg: #f6f6f6;
+  --c-bg-sub: #fbfbfb;
+  --c-border: #dcdcdc;
 
   /* FONTS */
   --f-button: 'Fira Code', monospace;
-  --f-logo: 'Noto Sans', sans-serif;
+  --f-logo: 'Lato', sans-serif;
   --f-header: Georgia, 'Times New Roman', Times, serif;
   --f-main: 'Roboto', sans-serif;
 }
@@ -64,6 +67,7 @@ body {
   min-height: 100%;
   font-family: var(--f-main);
   color: var(--c-main);
+  background-color: var(--c-bg);
 }
 
 
@@ -82,7 +86,9 @@ h1 {
   font-size: clamp(5rem, 9vw, 8rem);
   font-weight: 400;
   margin-bottom: 1rem;
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
+  font-family: var(--f-logo);
+
 }
 
 h2 {
@@ -112,7 +118,7 @@ p {
   color: var(--c-sub);
   font-weight: 300;
   margin-bottom: 1.5rem;
-  line-height: clamp(1.9rem, 3vw, 3.2rem);
+  line-height: clamp(1.9rem, 3vw, 3rem);
   letter-spacing: 0.5px;
 }
 

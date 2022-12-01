@@ -15,8 +15,13 @@
     cursor: pointer;
     font-size: clamp(1rem, 1.1vw, 1.5rem);
     font-family: var(--f-button);
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 2px;
+}
+
+#navigation button:hover {
+    transition: .3s;
+    background-color: #fafafa;
 }
 
 #navigation a {
@@ -28,6 +33,7 @@
 
 #navigation a:hover {
     opacity: 100%;
+    transition: .2s;
 }
 
 @media screen and (min-width: 37.5em) {
