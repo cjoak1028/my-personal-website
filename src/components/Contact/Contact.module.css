@@ -57,9 +57,9 @@
 }
 
 #contact-form button:hover {
-    transition: .2s;
-    background-color: white;
-    opacity: 0.6;
+    transition: .3s;
+    background-color: var(--c-main);
+    color: var(--c-bg);
 }
 
 #flex-wrapper {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Header.module.css";
 import MenuButton from "./MenuButton";
 import Navigation from "./Navigation";
@@ -6,6 +6,22 @@ import HamburgerMenu from "./HamburgerMenu";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const [mQuery, setMQuery] = useState({
+    matches: window.matchMedia("(min-width: 37.5em)").matches,
+  });
+
+  useEffect(() => {
+    let mediaQuery = window.matchMedia("(min-width: 37.5em)");
+    mediaQuery.addEventListener("change", setMQuery);
+
+    return () => {
+      mediaQuery.removeEventListener("change", setMQuery);
+    };
+  }, []);
+
+  useEffect(() => {
+    setOpenMenu(false);
+  }, [mQuery]);
 
   openMenu
     ? document.body.classList.add("scroll-lock")

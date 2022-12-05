@@ -75,13 +75,6 @@ body {
   background-color: var(--c-bg);
 }
 
-/* @media screen and (min-width: 37.5em) {
-  body {
-    overflow-y: visible !important;
-  }
-} */
-
-
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -89,15 +82,11 @@ body {
 }
 
 /* TYPOGRAPHY */
-/* h1, h2 {
-  font-family: var(--f-header);
-} */
 
 h1 {
   font-size: clamp(5rem, 9vw, 8rem);
   font-weight: 400;
   margin-bottom: 1rem;
-  /* letter-spacing: 2px; */
   font-family: var(--f-logo);
 
 }

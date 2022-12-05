@@ -3,22 +3,22 @@ import styles from "./Navigation.module.css";
 
 const Navigation = () => {
   return (
-    <nav id={styles.navigation}>
-      <ul className="flex flex-jc-sb flex-ai-c">
+    <nav className={styles.navigation}>
+      <ul className={`${styles["navigation-list"]} flex flex-jc-sb flex-ai-c`}>
         <li>
-          <a>about</a>
+          <a className={styles["section-link"]}>about</a>
         </li>
         <li>
-          <a>skills</a>
+          <a className={styles["section-link"]}>skills</a>
         </li>
         <li>
-          <a>work</a>
+          <a className={styles["section-link"]}>work</a>
         </li>
         <li>
-          <a>contact</a>
+          <a className={styles["section-link"]}>contact</a>
         </li>
         <li>
-          <button>Resume</button>
+          <a className={styles["resume-btn"]}>Resume</a>
         </li>
       </ul>
     </nav>
