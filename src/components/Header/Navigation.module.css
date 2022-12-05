@@ -20,8 +20,9 @@
 }
 
 #navigation button:hover {
-    transition: .3s;
+    transition: .2s;
     background-color: #fafafa;
+    opacity: 0.6;
 }
 
 #navigation a {

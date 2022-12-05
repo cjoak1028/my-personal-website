@@ -1,22 +1,59 @@
-#menu-button {
-    width: 2.3rem;
-    height: 1.7rem;
+.menu-button {
+    position: relative;
+    width: 1.8rem;
+    height: 1.2rem;
     cursor: pointer;
+    z-index: 30;
 }
 
-#menu-button:hover {
-    opacity: 60%;
+.menu-button:hover {
+    opacity: 0.5;
     transition: .2s;
 }
 
-#menu-button span {
-    height: .3rem;
+.menu-button span {
+    position: absolute;
+    height: .2rem;
     width: 100%;
     background-color: var(--c-main);
+    transition: .2s ease-in-out;
+}
+
+.menu-button span:nth-child(1) {
+    top: 0;
+}
+
+.menu-button span:nth-child(2) {
+    top: 0.5rem;
+}
+
+.menu-button span:nth-child(3) {
+    top: 1rem;
+}
+
+.menu-button.open span {
+    background-color: white;
+}
+
+.menu-button.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 0.6rem;
+    left: 0.1rem;
+}
+
+.menu-button.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+.menu-button.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 0.6rem;
+    left: 0.1rem;
 }
 
 @media screen and (min-width: 37.5em) {
-    #menu-button {
+    .menu-button {
         display: none;
     }
 }

@@ -1,18 +1,20 @@
-#header {
-    padding-right: 3rem;
+.header {
+    padding-right: clamp(2rem, 3vw, 3rem);
     position: fixed;
     width: 100%;
     background-color: rgba(245, 245, 245, 0.95);
     z-index: 10;
 }
 
-#logo-container {
+.logo-container {
     width: clamp(6rem, 9vw, 9rem);
     height: clamp(6rem, 9vw, 9rem);
     background-color: var(--c-main);
+    position: relative;
+    z-index: 30;
 }
 
-#logo-container p {
+.logo-container p {
     color: white;
     font-size: clamp(1.5rem, 2vw, 2rem);
     font-weight: 600;

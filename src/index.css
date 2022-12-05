@@ -56,6 +56,11 @@
   margin-bottom: clamp(1.4rem, 2.2vw, 2.2rem);
 }
 
+/* OTHER */
+.scroll-lock {
+  overflow-y: hidden;
+}
+
 /* RESET */
 html {
   box-sizing: border-box;
@@ -69,6 +74,12 @@ body {
   color: var(--c-main);
   background-color: var(--c-bg);
 }
+
+/* @media screen and (min-width: 37.5em) {
+  body {
+    overflow-y: visible !important;
+  }
+} */
 
 
 *, *::before, *::after {

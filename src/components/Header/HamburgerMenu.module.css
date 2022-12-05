@@ -1,0 +1,21 @@
+.hamburger-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    height: 0;
+    background-color: var(--c-main);
+    z-index: 20;
+    transition: .3s;
+}
+
+.hamburger-menu.open {
+    height: 100vh;
+}
+
+@media screen and (min-width: 37.5em) {
+    .hamburger-menu {
+        display: none;
+    }
+}
