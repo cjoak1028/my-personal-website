@@ -4,28 +4,21 @@ import MenuButton from "./MenuButton";
 import Navigation from "./Navigation";
 import HamburgerMenu from "./HamburgerMenu";
 
-const Header = () => {
+const Header = ({ mQuery }) => {
   const [openMenu, setOpenMenu] = useState(false);
-  const [mQuery, setMQuery] = useState({
-    matches: window.matchMedia("(min-width: 37.5em)").matches,
-  });
 
   useEffect(() => {
-    let mediaQuery = window.matchMedia("(min-width: 37.5em)");
-    mediaQuery.addEventListener("change", setMQuery);
-
-    return () => {
-      mediaQuery.removeEventListener("change", setMQuery);
-    };
-  }, []);
-
-  useEffect(() => {
-    setOpenMenu(false);
+    console.log("mQuery changed!");
+    if (mQuery.matches) {
+      setOpenMenu(false);
+    }
   }, [mQuery]);
 
-  openMenu
-    ? document.body.classList.add("scroll-lock")
-    : document.body.classList.remove("scroll-lock");
+  useEffect(() => {
+    openMenu
+      ? document.body.classList.add("scroll-lock")
+      : document.body.classList.remove("scroll-lock");
+  }, [openMenu]);
 
   return (
     <div className={`${styles.header} flex flex-jc-sb flex-ai-c`}>
@@ -36,13 +29,16 @@ const Header = () => {
       >
         <p>CJ</p>
       </div>
-      <Navigation />
-      <MenuButton
-        openMenu={openMenu}
-        setOpenMenu={(open) => {
-          setOpenMenu(open);
-        }}
-      />
+      {mQuery.matches ? (
+        <Navigation />
+      ) : (
+        <MenuButton
+          openMenu={openMenu}
+          setOpenMenu={(open) => {
+            setOpenMenu(open);
+          }}
+        />
+      )}
       <HamburgerMenu openMenu={openMenu} />
     </div>
   );

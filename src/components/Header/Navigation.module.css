@@ -1,5 +1,4 @@
 .navigation {
-    display: none;
     width: clamp(35rem, 40vw, 60rem);
 }
 
@@ -35,10 +34,4 @@
 .section-link:hover {
     opacity: 100%;
     transition: .2s;
-}
-
-@media screen and (min-width: 37.5em) {
-    .navigation {
-        display: block;
-    }
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
@@ -9,9 +9,22 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import styles from "./App.module.css";
 
 function App() {
+  const [mQuery, setMQuery] = useState({
+    matches: window.matchMedia("(min-width: 37.5em)").matches,
+  });
+
+  useEffect(() => {
+    let mediaQuery = window.matchMedia("(min-width: 37.5em)");
+    mediaQuery.addEventListener("change", setMQuery);
+
+    return () => {
+      mediaQuery.removeEventListener("change", setMQuery);
+    };
+  }, []);
+
   return (
     <div>
-      <Header />
+      <Header mQuery={mQuery} />
       <div className="flex">
         <Sidebar />
         <div id={styles["app-container"]}>
