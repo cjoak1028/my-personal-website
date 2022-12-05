@@ -8,7 +8,6 @@ const Header = ({ mQuery }) => {
   const [openMenu, setOpenMenu] = useState(false);
 
   useEffect(() => {
-    console.log("mQuery changed!");
     if (mQuery.matches) {
       setOpenMenu(false);
     }
