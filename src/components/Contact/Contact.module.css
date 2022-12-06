@@ -1,9 +1,9 @@
-#contact {
+.contact {
     max-width: 70rem;
     margin: auto;
 }
 
-#contact p {
+.contact p {
     line-height: 1.8rem;
     letter-spacing: 0.1rem;
     margin-bottom: clamp(1.2rem, 1.8vw, 1.8rem);
@@ -12,7 +12,7 @@
     font-weight: 400;
 }
 
-#contact-form input, textarea {
+.contact-form input, textarea {
     border: none;
     background-color: var(--c-bg-sub);
     padding: 1.7rem 1.5rem;
@@ -24,28 +24,28 @@
     border-left: 3px solid var(--c-border);
 }
 
-#contact-form input::placeholder, textarea::placeholder {
+.contact-form input::placeholder, textarea::placeholder {
     color: var(--c-main);
     opacity: 0.5;
     font-weight: 500;
     letter-spacing: .2rem;
 }
 
-#contact-form input {
+.contact-form input {
     display: block;
     width: 100%;
     height: 5.3rem;
     margin-bottom: 1rem;
 }
 
-#contact-form textarea {
+.contact-form textarea {
     display: block;
     width: 100%;
     height: 19rem;
     margin-bottom: 1.5rem;
 }
 
-#contact-form button {
+.submit-btn {
     width: 100%;
     height: 4.5rem;
     background-color: transparent;
@@ -57,28 +57,31 @@
     cursor: pointer;
 }
 
-#contact-form button:hover {
+.submit-btn:hover {
     transition: .3s;
     background-color: var(--c-main);
     color: var(--c-bg);
 }
 
-#flex-wrapper {
+.flex-wrapper {
     display: flex;
     flex-direction: column;
 }
 
 @media screen and (min-width: 50em) {
-    #flex-wrapper {
+    .flex-wrapper {
         flex-direction: row;
     }
 
-    #flex-wrapper>*:first-child {
+    .flex-wrapper>*:first-child {
         margin-right: 1rem;
     }
 
-    #contact-form button {
+    .contact-form {
+        text-align: right;
+    }
+
+    .submit-btn {
         width: calc(50% - .6rem);
-        float: right;
     }
 }
