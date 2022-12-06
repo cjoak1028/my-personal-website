@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./About.module.css";
 import { BsArrowRight } from "react-icons/bs";
+import { Link } from "react-scroll";
 
 const About = () => {
   return (
@@ -29,9 +30,17 @@ const About = () => {
         spectrum, experimenting with various tools and libraries to create
         awesome UI.
       </p>
-      <a id={styles["work-link"]} className="flex flex-ai-c flex-jc-fe">
+      <Link
+        smooth
+        spy
+        offset={-295}
+        duration={500}
+        to="work"
+        id={styles["work-link"]}
+        className="flex flex-ai-c flex-jc-fe"
+      >
         Check out some of my work <BsArrowRight id={styles.arrow} />
-      </a>
+      </Link>
     </div>
   );
 };

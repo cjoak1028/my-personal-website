@@ -14,6 +14,17 @@
     z-index: 30;
 }
 
+.logo-container:hover {
+    cursor: pointer;
+    /* background-color: var(--c-border); */
+}
+
+.logo-container:hover p {
+    transition: 0.2s;
+    /* color: var(--c-main); */
+    color: red;
+}
+
 .logo-container p {
     color: white;
     font-size: clamp(1.5rem, 2vw, 2rem);

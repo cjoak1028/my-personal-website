@@ -13,21 +13,21 @@
 }
 
 #contact-form input, textarea {
-    /* border: 1px solid #10855c; */
     border: none;
     background-color: var(--c-bg-sub);
     padding: 1.7rem 1.5rem;
     color: var(--c-main);
     font-family: var(--f-main);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     letter-spacing: .1rem;
-    font-weight: 300;
+    font-weight: 500;
     border-left: 3px solid var(--c-border);
 }
 
 #contact-form input::placeholder, textarea::placeholder {
     color: var(--c-main);
-    font-weight: 400;
+    opacity: 0.5;
+    font-weight: 500;
     letter-spacing: .2rem;
 }
 

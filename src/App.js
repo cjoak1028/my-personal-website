@@ -41,25 +41,25 @@ function App() {
       <div className="flex">
         <Sidebar />
         <div id={styles["app-container"]}>
-          <div className={styles["section"]}>
+          <section className={styles["section"]}>
             <Hero />
-          </div>
+          </section>
           <span className={styles.divider}></span>
-          <div className={styles["section"]}>
+          <section id="about" className={styles["section"]}>
             <About />
-          </div>
+          </section>
           <span className={styles.divider}></span>
-          <div className={styles["section"]}>
+          <section id="skills" className={styles["section"]}>
             <Skills />
-          </div>
+          </section>
           <span className={styles.divider}></span>
-          <div className={styles["section"]}>
+          <section id="work" className={styles["section"]}>
             <Work />
-          </div>
+          </section>
           <span className={styles.divider}></span>
-          <div className={styles["section"]}>
+          <section id="contact" className={styles["section"]}>
             <Contact />
-          </div>
+          </section>
           <div id={styles.attribution}>
             <div id={styles.links} className="flex flex-ai-c flex-jc-c">
               <span></span>
