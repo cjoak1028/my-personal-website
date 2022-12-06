@@ -8,10 +8,7 @@ const Contact = () => {
         <h2>CONTACT</h2>
         <hr />
       </div>
-      <p>
-        * I’m actively searching for new opportunities, so feel free to contact
-        me!
-      </p>
+      <p>I’m looking for new opportunities, so feel free to contact me!</p>
       <form id={styles["contact-form"]}>
         <div id={styles["flex-wrapper"]}>
           <input type="text" id="name" name="name" placeholder="Name" />

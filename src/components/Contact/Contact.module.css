@@ -4,11 +4,12 @@
 }
 
 #contact p {
-    font-size: clamp(1.2rem, 1.5vw, 1.4rem);
     line-height: 1.8rem;
     letter-spacing: 0.1rem;
-    margin-bottom: 1.2rem;
-    color: var(--c-main);
+    margin-bottom: clamp(1.2rem, 1.8vw, 1.8rem);
+    color: red;
+    font-size: clamp(1.3rem, 1.8vw, 1.8rem);
+    font-weight: 400;
 }
 
 #contact-form input, textarea {

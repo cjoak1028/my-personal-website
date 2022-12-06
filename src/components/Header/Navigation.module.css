@@ -1,5 +1,5 @@
 .navigation {
-    width: clamp(35rem, 40vw, 60rem);
+    width: clamp(35rem, 50vw, 50rem);
 }
 
 .navigation-list {
@@ -16,6 +16,11 @@
     font-family: var(--f-button);
     font-weight: 500;
     letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.resume-btn:visited {
+    color: var(--c-main);
 }
 
 .resume-btn:hover {

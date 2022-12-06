@@ -4,7 +4,7 @@ import styles from "./MenuButton.module.css";
 const MenuButton = ({ openMenu, setOpenMenu }) => {
   return (
     <div
-      className={`${styles["menu-button"]} ${openMenu ? styles.open : ""}`}
+      className={`${styles["menu-button"]} ${openMenu && styles.open}`}
       onClick={() => {
         setOpenMenu(!openMenu);
       }}

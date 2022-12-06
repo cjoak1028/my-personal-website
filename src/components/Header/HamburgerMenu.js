@@ -4,7 +4,7 @@ import styles from "./HamburgerMenu.module.css";
 const HamburgerMenu = ({ openMenu }) => {
   return (
     <div
-      className={`${styles["hamburger-menu"]} ${openMenu ? styles.open : ""}`}
+      className={`${styles["hamburger-menu"]} ${openMenu && styles.open}`}
     ></div>
   );
 };

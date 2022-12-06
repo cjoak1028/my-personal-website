@@ -19,8 +19,10 @@ function App() {
       setMQuery({ matches: e.matches });
     };
     if (mediaQuery?.addEventListener) {
+      // For non-safari browsers
       mediaQuery.addEventListener("change", handler);
     } else {
+      // For safari browsers
       mediaQuery.addListener(handler);
     }
 

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Navigation.module.css";
+import resume from "../../assets/doc/resume.pdf";
 
 const Navigation = () => {
   return (
@@ -18,7 +19,9 @@ const Navigation = () => {
           <a className={styles["section-link"]}>contact</a>
         </li>
         <li>
-          <a className={styles["resume-btn"]}>Resume</a>
+          <a className={styles["resume-btn"]} href={resume}>
+            Resume
+          </a>
         </li>
       </ul>
     </nav>

@@ -24,7 +24,7 @@ const About = () => {
       </p>
       <p>
         My eagerness to always be learning and improving myself has helped me
-        endure countless online tutorials and partake in fascinating projects.
+        endure countless online tutorials and complete fascinating projects.
         Currently, I am focused on the front-end side of the web development
         spectrum, experimenting with various tools and libraries to create
         awesome UI.
