@@ -32,11 +32,15 @@
 .section-link {
     font-size: clamp(1.3rem, 1.6vw, 1.8rem);
     color: var(--c-main);
+    opacity: 0.5;
     cursor: pointer;
-    opacity: 60%;
 }
 
 .section-link:hover {
-    opacity: 100%;
     transition: .2s;
+    opacity: 1;
+}
+
+.nav-item>.active {
+    opacity: 1;
 }

@@ -3,7 +3,7 @@ import styles from "./Header.module.css";
 import MenuButton from "./MenuButton";
 import Navigation from "./Navigation";
 import HamburgerMenu from "./HamburgerMenu";
-import { Link } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
 
 const Header = ({ mQuery }) => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -22,15 +22,17 @@ const Header = ({ mQuery }) => {
 
   return (
     <div className={`${styles.header} flex flex-jc-sb flex-ai-c`}>
-      <Link smooth spy duration={500} offset={-295} to="hero">
-        <div
-          className={`${styles["logo-container"]} ${
-            openMenu ? styles.open : ""
-          } flex flex-jc-c flex-ai-c`}
-        >
-          <p>CJ</p>
-        </div>
-      </Link>
+      <div
+        className={`${styles["logo-container"]} ${
+          openMenu ? styles.open : ""
+        } flex flex-jc-c flex-ai-c`}
+        onClick={() => {
+          scroll.scrollToTop();
+        }}
+      >
+        <p>CJ</p>
+      </div>
+
       {mQuery.matches ? (
         <Navigation />
       ) : (

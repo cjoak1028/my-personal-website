@@ -7,10 +7,10 @@ const Navigation = () => {
   return (
     <nav className={styles.navigation}>
       <ul className={`${styles["navigation-list"]} flex flex-jc-sb flex-ai-c`}>
-        <li>
+        <li className={styles["nav-item"]}>
           <Link
             className={styles["section-link"]}
-            activeClass="active"
+            activeClass={styles.active}
             smooth
             spy
             offset={-295}
@@ -20,9 +20,10 @@ const Navigation = () => {
             about
           </Link>
         </li>
-        <li>
+        <li className={styles["nav-item"]}>
           <Link
             className={styles["section-link"]}
+            activeClass={styles.active}
             smooth
             spy
             offset={-295}
@@ -32,9 +33,10 @@ const Navigation = () => {
             skills
           </Link>
         </li>
-        <li>
+        <li className={styles["nav-item"]}>
           <Link
             className={styles["section-link"]}
+            activeClass={styles.active}
             smooth
             spy
             offset={-295}
@@ -44,9 +46,10 @@ const Navigation = () => {
             work
           </Link>
         </li>
-        <li>
+        <li className={styles["nav-item"]}>
           <Link
             className={styles["section-link"]}
+            activeClass={styles.active}
             smooth
             spy
             offset={-295}

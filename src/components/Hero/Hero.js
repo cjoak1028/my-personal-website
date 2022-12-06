@@ -4,7 +4,7 @@ import avatarImage from "../../assets/img/IMG_0570.jpg";
 
 const Hero = () => {
   return (
-    <div id="hero" className={styles.hero}>
+    <div className={styles.hero}>
       <div className={styles["hero-text"]}>
         <h4>Yo, my name is</h4>
         <h1>
