@@ -1,5 +1,5 @@
-#work {
-    max-width: 90rem;
+.work {
+    max-width: 110rem;
     margin: auto;
 }
 
@@ -14,10 +14,3 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
-/* @media screen and (min-width: 65em) {
-    #work {
-        position: relative;
-        left: -5%;
-    }
-} */

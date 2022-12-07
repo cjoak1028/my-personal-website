@@ -12,11 +12,7 @@
     background-color: var(--c-main);
     position: relative;
     z-index: 30;
-}
-
-.logo-container:hover {
     cursor: pointer;
-    /* background-color: var(--c-border); */
 }
 
 .logo-container:hover p {

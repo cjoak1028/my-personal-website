@@ -1,18 +1,18 @@
 #skills {
-    max-width: 70rem;
+    max-width: 115rem;
     margin: auto;
 }
 
 #skills-list p {
     color: var(--c-main);
-    font-size: clamp(1.3rem, 1.8vw, 1.8rem);
+    font-size: clamp(1.3rem, 1.8vw, 2.5rem);
     font-weight: 400;
 }
 
 #skills-list ul {
     list-style: none;
     columns: 2;
-    font-size: clamp(1.4rem, 2vw, 2rem);
+    font-size: clamp(1.4rem, 2vw, 2.7rem);
     font-weight: 300;
     color: var(--c-sub);
     margin-bottom: 3rem;
@@ -38,38 +38,43 @@
     border-left: 3px solid var(--c-border);
 }
 
+/* .experience:hover {
+    transition: .5s;
+    border-color: var(--c-accent);
+} */
+
 .experience-title {
-    font-size: clamp(1.6rem, 2vw, 2rem);
+    font-size: clamp(1.6rem, 2vw, 2.7rem);
     font-weight: 400;
     margin-bottom: .6rem;
 }
 
 .experience-date {
-    font-size: clamp(1.4rem, 1.5vw, 1.8rem);
+    font-size: clamp(1.4rem, 1.5vw, 2.5rem);
     margin-bottom: .5rem;
     font-weight: 300;
 }
 
 .experience-company {
-    font-size: clamp(1.4rem, 1.5vw, 1.8rem);
+    font-size: clamp(1.4rem, 1.5vw, 2.5rem);
     font-weight: 400;
     margin-bottom: 1rem;
     color: var(--c-sub);
 }
 
 .experience-description {
-    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    font-size: clamp(1.2rem, 2vw, 2.3rem);
     margin-bottom: 0;
     font-weight: 300;
-    line-height: clamp(1.8rem, 3vw, 2.2rem);
+    line-height: clamp(1.8rem, 3vw, 2.9rem);
 }
 
 .bullet {
-    width: clamp(1.4rem, 1.5vw, 1.5rem);
+    width: clamp(1.4rem, 1.5vw, 2.2rem);
     height: auto;
     margin-right: 6px;
     /* color: #10855c; */
-    color: var(--c-sub);
+    color: var(--c-accent);
 }
 
 @media screen and (min-width: 50em) {

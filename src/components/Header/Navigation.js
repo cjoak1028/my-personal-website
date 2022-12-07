@@ -13,7 +13,7 @@ const Navigation = () => {
             activeClass={styles.active}
             smooth
             spy
-            offset={-295}
+            offset={-220}
             duration={500}
             to="about"
           >
@@ -26,7 +26,7 @@ const Navigation = () => {
             activeClass={styles.active}
             smooth
             spy
-            offset={-295}
+            offset={-288}
             duration={500}
             to="skills"
           >
@@ -39,7 +39,7 @@ const Navigation = () => {
             activeClass={styles.active}
             smooth
             spy
-            offset={-295}
+            offset={-288}
             duration={500}
             to="work"
           >
@@ -52,7 +52,7 @@ const Navigation = () => {
             activeClass={styles.active}
             smooth
             spy
-            offset={-295}
+            offset={-288}
             duration={500}
             to="contact"
           >

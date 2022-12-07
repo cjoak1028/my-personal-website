@@ -1,11 +1,11 @@
 .work-card {
     background-color: var(--c-bg-sub);
-    padding: clamp(2rem, 2vw, 2.5rem);
+    padding: clamp(2rem, 2vw, 3.2rem);
     border-left: 3px solid var(--c-border);
 }
 
 .work-card h4 {
-    font-size: clamp(1.6rem, 2vw, 2rem);
+    font-size: clamp(1.6rem, 2vw, 2.7rem);
     margin-bottom: 1.4rem;
 }
 
@@ -19,8 +19,8 @@
 }
 
 .work-description {
-    font-size: clamp(1.2rem, 1.6vw, 1.6rem);
-    line-height: clamp(1.6rem, 2.2vw, 2.2rem);
+    font-size: clamp(1.2rem, 1.6vw, 2rem);
+    line-height: clamp(1.6rem, 2.2vw, 3rem);
 }
 
 .work-technologies {
@@ -30,14 +30,14 @@
 }
 
 .tech {
-    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    font-size: clamp(1rem, 1.2vw, 1.9rem);
     font-weight: 500;
     color: var(--c-main);
     margin-bottom: 0;
 }
 
 .tech:not(:last-of-type) {
-    margin-right: 1.2rem;
+    margin-right: clamp(1rem, 1.5vw, 4rem);
 }
 
 .work-link {
@@ -50,7 +50,7 @@
 }
 
 .github-logo {
-    width: clamp(1.6rem, 2vw, 2rem);
+    width: clamp(1.6rem, 2vw, 2.7rem);
     height: auto;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .link-icon {
-    width: clamp(1.8rem, 2.5vw, 2.5rem);
+    width: clamp(1.8rem, 2.5vw, 3.2rem);
     height: auto;
 }
 

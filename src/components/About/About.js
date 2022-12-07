@@ -5,8 +5,8 @@ import { Link } from "react-scroll";
 
 const About = () => {
   return (
-    <div id={styles.about}>
-      <div id={styles["about-title"]} className="flex flex-ai-c mb-title">
+    <div className={styles.about}>
+      <div className="flex flex-ai-c mb-title">
         <h2>ABOUT</h2>
         <hr />
       </div>
@@ -36,10 +36,9 @@ const About = () => {
         offset={-295}
         duration={500}
         to="work"
-        id={styles["work-link"]}
-        className="flex flex-ai-c flex-jc-fe"
+        className={`${styles["work-link"]} flex flex-ai-c flex-jc-fe`}
       >
-        Check out some of my work <BsArrowRight id={styles.arrow} />
+        Check out some of my work <BsArrowRight className={styles.arrow} />
       </Link>
     </div>
   );

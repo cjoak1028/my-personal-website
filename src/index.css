@@ -6,6 +6,7 @@
   --c-bg: #f6f6f6;
   --c-bg-sub: #fbfbfb;
   --c-border: #dcdcdc;
+  --c-accent: rgb(255, 0, 98);
 
   /* FONTS */
   --f-button: 'Fira Code', monospace;
@@ -81,10 +82,15 @@ body {
   box-sizing: inherit;
 }
 
+input:focus, textarea:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
 /* TYPOGRAPHY */
 
 h1 {
-  font-size: clamp(5rem, 9vw, 8rem);
+  font-size: clamp(5rem, 9vw, 9rem);
   font-weight: 400;
   margin-bottom: 1rem;
   font-family: var(--f-logo);
@@ -113,12 +119,12 @@ h4 {
 }
 
 p {
-  /* font-size: 1.8rem; */
-  font-size: clamp(1.4rem, 2vw, 2rem);
+  /* font-size: clamp(1.4rem, 2vw, 3rem); */
+  font-size: clamp(1.4rem, 2vw, 2.7rem);
   color: var(--c-sub);
   font-weight: 300;
   margin-bottom: 1.5rem;
-  line-height: clamp(1.9rem, 3vw, 3rem);
+  line-height: clamp(1.9rem, 3vw, 4rem);
   letter-spacing: 0.5px;
 }
 

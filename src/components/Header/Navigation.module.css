@@ -31,9 +31,11 @@
 
 .section-link {
     font-size: clamp(1.3rem, 1.6vw, 1.8rem);
+    font-weight: 300;
     color: var(--c-main);
-    opacity: 0.5;
+    opacity: 0.7;
     cursor: pointer;
+    padding: .5rem 0;
 }
 
 .section-link:hover {
@@ -43,4 +45,5 @@
 
 .nav-item>.active {
     opacity: 1;
+    border-bottom: 1px solid var(--c-accent);
 }

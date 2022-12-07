@@ -7,6 +7,28 @@
     text-align: center;
 }
 
+/* .hero-text h1 {
+    background-color: turquoise;
+} */
+
+/* .hero-text h4 {
+    color: rgb(255, 0, 98);
+} */
+
+/* .hero-text h3 {
+    color: var(--c-accent);
+} */
+
+/* .first-name {
+    color: var(--c-accent);
+} */
+
+.job-title {
+    color: var(--c-accent);
+    /* color: black; */
+    font-weight: 300;
+}
+
 .last-name {
     font-family: var(--f-main);
 }

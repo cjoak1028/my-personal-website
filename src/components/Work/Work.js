@@ -6,8 +6,8 @@ import { WORK_DATA } from "../../data/workData";
 
 const Work = () => {
   return (
-    <div id={styles.work}>
-      <div id={styles["work-title"]} className="flex flex-ai-c mb-title">
+    <div className={styles.work}>
+      <div className="flex flex-ai-c mb-title">
         <h2>WORK</h2>
         <hr />
       </div>

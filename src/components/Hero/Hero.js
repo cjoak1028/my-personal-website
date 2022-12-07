@@ -8,9 +8,10 @@ const Hero = () => {
       <div className={styles["hero-text"]}>
         <h4>Yo, my name is</h4>
         <h1>
-          CJ <span className={styles["last-name"]}>KIM</span>
+          <span className={styles["first-name"]}>CJ</span>{" "}
+          <span className={styles["last-name"]}>KIM</span>
         </h1>
-        <h3>I'm a Full-Stack Web Developer based in Toronto, Canada.</h3>
+        <h3>I'm a <span className={styles["job-title"]}>Full-Stack Web Developer</span> based in Toronto, Canada.</h3>
       </div>
       <div className={`flex flex-jc-c flex-ai-c ${styles["avatar-outline"]}`}>
         <div className={styles.avatar}>
