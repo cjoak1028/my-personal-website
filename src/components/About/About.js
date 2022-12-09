@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className={styles.about}>
       <div className="flex flex-ai-c mb-title">
-        <h2>ABOUT</h2>
+        <h2>ABOUT ME</h2>
         <hr />
       </div>
       <div className={`${styles["first-paragraph"]} flex`}>
@@ -17,23 +17,23 @@ const About = () => {
           full-stack web developer currently based in Toronto, Canada.
         </p>
       </div>
-      <p>
+      <p className={styles["second-paragraph"]}>
         I pursued a degree in Computer Science at the University of Toronto.
         While there, I had the privilege of interning as a full-stack web
         developer at a start-up, where I discovered my passion for building
         things on the web.
       </p>
       <p>
-        My eagerness to always be learning and improving myself has helped me
-        endure countless online tutorials and complete fascinating projects.
+        My eagerness to constantly be learning and improving myself has helped
+        me endure countless online tutorials and complete fascinating projects.
         Currently, I am focused on the front-end side of the web development
-        spectrum, experimenting with various tools and libraries to create
-        awesome UI.
+        spectrum, experimenting with various tools and libraries that help me
+        create awesome UI.
       </p>
       <Link
         smooth
         spy
-        offset={-295}
+        offset={-140}
         duration={500}
         to="work"
         className={`${styles["work-link"]} flex flex-ai-c flex-jc-fe`}

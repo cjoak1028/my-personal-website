@@ -8,10 +8,64 @@
     background-color: var(--c-main);
     z-index: 20;
     transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hamburger-menu.open {
     height: 100vh;
+}
+
+.menu-list {
+    transition: .2s;
+    display: none;
+}
+
+.hamburger-menu.open .menu-list {
+    z-index: 40;
+    color: var(--c-border);
+    display: block;
+    list-style: none;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.menu-item {
+    margin-bottom: clamp(2rem, 5vh, 5rem);
+}
+
+.link {
+    font-weight: 300;
+    padding-bottom: .5rem;
+    cursor: pointer;
+}
+
+.link:hover {
+    border-bottom: 1px solid white;
+}
+
+.resume-btn {
+    background-color: transparent;
+    border: 1px solid var(--c-border);
+    color: var(--c-border);
+    padding: clamp(1rem, 2vw, 2rem) clamp(1rem, 4vw, 4rem);
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+    font-family: var(--f-button);
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.resume-btn:hover {
+    transition: 0.2s;
+    background-color: rgba(70, 70, 70, 0.9);
+}
+
+.resume-btn:visited {
+    color: var(--c-border);
 }
 
 @media screen and (min-width: 37.5em) {

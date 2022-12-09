@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <div id={styles.skills}>
       <div id={styles["skills-title"]} className="flex flex-ai-c mb-title">
-        <h2>SKILLS</h2>
+        <h2>MY SKILLS</h2>
         <hr />
       </div>
       <div id={styles["skills-list"]}>

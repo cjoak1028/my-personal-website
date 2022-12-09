@@ -6,7 +6,7 @@
   --c-bg: #f6f6f6;
   --c-bg-sub: #fbfbfb;
   --c-border: #dcdcdc;
-  --c-accent: rgb(255, 0, 98);
+  --c-accent: rgb(0, 0, 0);
 
   /* FONTS */
   --f-button: 'Fira Code', monospace;
@@ -54,7 +54,7 @@
 }
 
 .mb-title {
-  margin-bottom: clamp(1.4rem, 2.2vw, 2.2rem);
+  margin-bottom: clamp(1.4rem, 2.2vw, 3rem);
 }
 
 /* OTHER */

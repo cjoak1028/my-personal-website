@@ -4,11 +4,14 @@
 
 .navigation-list {
     list-style: none;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .resume-btn {
     background-color: transparent;
     border: 1px solid var(--c-main);
+    color: var(--c-accent);
     padding: clamp(0.5rem, 1vw, 0.8rem) clamp(1rem, 1.5vw, 2rem);
     text-transform: uppercase;
     cursor: pointer;
@@ -20,7 +23,7 @@
 }
 
 .resume-btn:visited {
-    color: var(--c-main);
+    color: var(--c-sub);
 }
 
 .resume-btn:hover {

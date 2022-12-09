@@ -5,7 +5,7 @@
 
 #skills-list p {
     color: var(--c-main);
-    font-size: clamp(1.3rem, 1.8vw, 2.5rem);
+    font-size: clamp(1.2rem, 1.8vw, 2.3rem);
     font-weight: 400;
 }
 
@@ -34,7 +34,7 @@
 .experience {
     background-color: var(--c-bg-sub);
     color: var(--c-main);
-    padding: clamp(2rem, 2vw, 2.5rem);
+    padding: clamp(2rem, 2vw, 3rem);
     border-left: 3px solid var(--c-border);
 }
 
@@ -63,17 +63,16 @@
 }
 
 .experience-description {
-    font-size: clamp(1.2rem, 2vw, 2.3rem);
+    font-size: clamp(1.2rem, 1.8vw, 2.3rem);
     margin-bottom: 0;
     font-weight: 300;
     line-height: clamp(1.8rem, 3vw, 2.9rem);
 }
 
 .bullet {
-    width: clamp(1.4rem, 1.5vw, 2.2rem);
+    width: clamp(1.4rem, 1.5vw, 1.8rem);
     height: auto;
-    margin-right: 6px;
-    /* color: #10855c; */
+    margin-right: clamp(.6rem, 1vw, 1.2rem);
     color: var(--c-accent);
 }
 

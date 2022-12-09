@@ -6,14 +6,14 @@ import { Link } from "react-scroll";
 const Navigation = () => {
   return (
     <nav className={styles.navigation}>
-      <ul className={`${styles["navigation-list"]} flex flex-jc-sb flex-ai-c`}>
+      <ul className={`${styles["navigation-list"]} flex`}>
         <li className={styles["nav-item"]}>
           <Link
             className={styles["section-link"]}
             activeClass={styles.active}
             smooth
             spy
-            offset={-220}
+            offset={-140}
             duration={500}
             to="about"
           >
@@ -26,7 +26,7 @@ const Navigation = () => {
             activeClass={styles.active}
             smooth
             spy
-            offset={-288}
+            offset={-140}
             duration={500}
             to="skills"
           >
@@ -39,7 +39,7 @@ const Navigation = () => {
             activeClass={styles.active}
             smooth
             spy
-            offset={-288}
+            offset={-140}
             duration={500}
             to="work"
           >
@@ -52,7 +52,7 @@ const Navigation = () => {
             activeClass={styles.active}
             smooth
             spy
-            offset={-288}
+            offset={-150}
             duration={500}
             to="contact"
           >

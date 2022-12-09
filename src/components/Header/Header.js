@@ -27,7 +27,8 @@ const Header = ({ mQuery }) => {
           openMenu ? styles.open : ""
         } flex flex-jc-c flex-ai-c`}
         onClick={() => {
-          scroll.scrollToTop();
+          scroll.scrollToTop({ duration: 500 });
+          openMenu && setOpenMenu(false);
         }}
       >
         <p>CJ</p>
@@ -43,7 +44,12 @@ const Header = ({ mQuery }) => {
           }}
         />
       )}
-      <HamburgerMenu openMenu={openMenu} />
+      <HamburgerMenu
+        openMenu={openMenu}
+        setOpenMenu={(open) => {
+          setOpenMenu(open);
+        }}
+      />
     </div>
   );
 };

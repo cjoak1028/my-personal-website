@@ -1,11 +1,11 @@
 .about {
-    max-width: 122rem;
+    max-width: 115rem;
     margin: auto;
 }
 
 .work-link {
     margin-right: 1rem;
-    margin-top: clamp(1.8rem, 3vw, 2.3rem);
+    margin-top: clamp(1.8rem, 3vw, 2.5rem);
     cursor: pointer;
     opacity: 40%;
     font-size: clamp(1.3rem, 1.6vw, 2.4rem);
@@ -27,8 +27,8 @@
 }
 
 .first-paragraph {
-    border-left: 3px solid var(--c-accent);
-    padding-left: 12px;
+    border-left: 3px solid var(--c-border);
+    padding-left: clamp(1.2rem, 1.8vw, 2rem);
     margin-bottom: 1.5rem;
 }
 

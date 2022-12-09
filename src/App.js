@@ -41,7 +41,7 @@ function App() {
       <div className="flex">
         <Sidebar />
         <div id={styles["app-container"]}>
-          <section className={styles["section"]}>
+          <section className={styles["hero-section"]}>
             <Hero />
           </section>
           <span className={styles.divider}></span>

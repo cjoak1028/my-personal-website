@@ -11,6 +11,7 @@
 
 .work-id {
     font-weight: 300;
+    color: var(--c-accent);
 }
 
 .work-name {

@@ -14,11 +14,19 @@
     margin: clamp(10rem, 15vw, 20rem) 0;
 }
 
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - clamp(6rem, 9vw, 9rem));
+
+}
+
 .divider {
     display: block;
     width: clamp(0.7rem, 1vw, 1rem);
     height: clamp(0.7rem, 1vw, 1rem);
-    background-color: var(--c-main);
+    background-color: transparent;
     margin: auto;
     transform: rotate(45deg)
 }
