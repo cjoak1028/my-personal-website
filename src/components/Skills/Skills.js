@@ -1,17 +1,62 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Skills.module.css";
 import { BiRightArrow } from "react-icons/bi";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Skills = () => {
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+  const firstVariant = {
+    visible: { opacity: 1, transition: { duration: 0.4 } },
+    hidden: { opacity: 0 },
+  };
+  const secondVariant = {
+    visible: { opacity: 1, transition: { duration: 0.4, delay: 0.1 } },
+    hidden: { opacity: 0 },
+  };
+  const thirdVariant = {
+    visible: { opacity: 1, transition: { duration: 0.4, delay: 0.2 } },
+    hidden: { opacity: 0 },
+  };
+  const fourthVariant = {
+    visible: { opacity: 1, transition: { duration: 0.4, delay: 0.3 } },
+    hidden: { opacity: 0 },
+  };
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    }
+  }, [control, inView]);
+
   return (
     <div id={styles.skills}>
-      <div id={styles["skills-title"]} className="flex flex-ai-c mb-title">
-        <h2>: my skills</h2>
-        {/* <hr /> */}
-      </div>
+      <motion.h2
+        ref={ref}
+        variants={firstVariant}
+        initial="hidden"
+        animate={control}
+        className="mb-title"
+      >
+        : my skills
+      </motion.h2>
       <div id={styles["skills-list"]}>
-        <p>I have experience with the following technologies:</p>
-        <ul id={styles["skills-list"]}>
+        <motion.p
+          ref={ref}
+          variants={secondVariant}
+          initial="hidden"
+          animate={control}
+        >
+          I have experience with the following technologies:
+        </motion.p>
+        <motion.ul
+          id={styles["skills-list"]}
+          ref={ref}
+          variants={thirdVariant}
+          initial="hidden"
+          animate={control}
+        >
           <li className="flex flex-ai-c">
             <BiRightArrow className={styles.bullet} /> HTML
           </li>
@@ -40,9 +85,15 @@ const Skills = () => {
           <li className="flex flex-ai-c">
             <BiRightArrow className={styles.bullet} /> Python
           </li>
-        </ul>
+        </motion.ul>
       </div>
-      <div className={styles["experience"]}>
+      <motion.div
+        ref={ref}
+        variants={fourthVariant}
+        initial="hidden"
+        animate={control}
+        className={styles["experience"]}
+      >
         <div id={styles["flex-wrapper"]}>
           <h4 className={styles["experience-title"]}>
             Full-Stack Web Developer Intern
@@ -54,7 +105,7 @@ const Skills = () => {
           Contributed to the development of a web application that helps people
           create beautiful scientific figures, diagrams, and illustrations.
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };
