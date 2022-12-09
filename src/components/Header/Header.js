@@ -31,7 +31,7 @@ const Header = ({ mQuery }) => {
           openMenu && setOpenMenu(false);
         }}
       >
-        <p>CJ</p>
+        <p>C/K</p>
       </div>
 
       {mQuery.matches ? (

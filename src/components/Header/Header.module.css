@@ -17,8 +17,6 @@
 
 .logo-container:hover p {
     transition: 0.2s;
-    /* color: var(--c-main); */
-    /* color: red; */
 }
 
 .logo-container p {

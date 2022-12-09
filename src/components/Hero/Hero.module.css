@@ -25,13 +25,16 @@
 
 .job-title {
     color: var(--c-accent);
-    /* color: black; */
     font-weight: 300;
 }
 
 .last-name {
     font-family: var(--f-main);
 }
+
+/* .name-divider {
+    color: var(--c-border);
+} */
 
 .avatar-outline {
     border: 2px dotted #d4d4d4;

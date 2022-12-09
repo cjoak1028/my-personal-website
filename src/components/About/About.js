@@ -7,14 +7,14 @@ const About = () => {
   return (
     <div className={styles.about}>
       <div className="flex flex-ai-c mb-title">
-        <h2>ABOUT ME</h2>
-        <hr />
+        <h2>: about me</h2>
+        {/* <hr /> */}
       </div>
       <div className={`${styles["first-paragraph"]} flex`}>
-        <span></span>
         <p>
-          Hello! My name is Chang-Ju (but you can call me CJ), and I'm a
-          full-stack web developer currently based in Toronto, Canada.
+          <span className={styles.bold}>Hello!</span> My name is Chang-Ju (but
+          you can call me CJ), and I'm a full-stack web developer currently
+          based in Toronto, Canada.
         </p>
       </div>
       <p className={styles["second-paragraph"]}>
@@ -27,8 +27,8 @@ const About = () => {
         My eagerness to constantly be learning and improving myself has helped
         me endure countless online tutorials and complete fascinating projects.
         Currently, I am focused on the front-end side of the web development
-        spectrum, experimenting with various tools and libraries that help me
-        create awesome UI.
+        spectrum, experimenting with various tools and libraries to create
+        awesome UI.
       </p>
       <Link
         smooth

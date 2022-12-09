@@ -29,6 +29,7 @@
     list-style: none;
     text-align: center;
     font-size: 2rem;
+    width: 100%;
 }
 
 .menu-item {
@@ -36,7 +37,7 @@
 }
 
 .link {
-    font-weight: 300;
+    font-weight: 200;
     padding-bottom: .5rem;
     cursor: pointer;
 }
@@ -46,17 +47,20 @@
 }
 
 .resume-btn {
+    display: block;
+    margin: auto;
     background-color: transparent;
     border: 1px solid var(--c-border);
     color: var(--c-border);
-    padding: clamp(1rem, 2vw, 2rem) clamp(1rem, 4vw, 4rem);
+    padding: 1rem 2rem;
     text-transform: uppercase;
     cursor: pointer;
-    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+    font-size: clamp(1.4rem, 1.7vw, 1.7rem);
     font-family: var(--f-button);
     font-weight: 500;
     letter-spacing: 2px;
     text-decoration: none;
+    width: 50%;
 }
 
 .resume-btn:hover {

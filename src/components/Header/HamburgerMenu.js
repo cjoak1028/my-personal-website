@@ -19,7 +19,7 @@ const HamburgerMenu = ({ openMenu, setOpenMenu }) => {
               setOpenMenu(false);
             }}
           >
-            about
+            : about
           </Link>
         </li>
         <li className={styles["menu-item"]}>
@@ -34,7 +34,7 @@ const HamburgerMenu = ({ openMenu, setOpenMenu }) => {
               setOpenMenu(false);
             }}
           >
-            skills
+            : skills
           </Link>
         </li>
         <li className={styles["menu-item"]}>
@@ -49,7 +49,7 @@ const HamburgerMenu = ({ openMenu, setOpenMenu }) => {
               setOpenMenu(false);
             }}
           >
-            work
+            : work
           </Link>
         </li>
         <li className={styles["menu-item"]}>
@@ -64,7 +64,7 @@ const HamburgerMenu = ({ openMenu, setOpenMenu }) => {
               setOpenMenu(false);
             }}
           >
-            contact
+            : contact
           </Link>
         </li>
         <li>
