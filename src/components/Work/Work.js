@@ -9,12 +9,12 @@ const Work = () => {
   const control = useAnimation();
   const [ref, inView] = useInView();
   const firstVariant = {
-    visible: { opacity: 1, transition: { duration: 0.4 } },
-    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.3 }, x: 0 },
+    hidden: { opacity: 0, x: -200 },
   };
   const secondVariant = {
-    visible: { opacity: 1, transition: { duration: 0.4, delay: 0.3 } },
-    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.6 }, y: 0 },
+    hidden: { opacity: 0, y: 70 },
   };
 
   useEffect(() => {
@@ -32,19 +32,15 @@ const Work = () => {
         animate={control}
         className="mb-title"
       >
-        : my work
+        my work
       </motion.h2>
-      <motion.div
-        ref={ref}
-        variants={secondVariant}
-        initial="hidden"
-        animate={control}
+      <div
         className={styles["work-gallery"]}
       >
-        {WORK_DATA.map((data) => {
-          return <WorkCard data={data} />;
+        {WORK_DATA.map((data, index) => {
+          return <WorkCard data={data} delay={`0.${index}`} />;
         })}
-      </motion.div>
+      </div>
     </div>
   );
 };

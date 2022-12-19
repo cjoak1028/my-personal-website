@@ -8,20 +8,20 @@ const Skills = () => {
   const control = useAnimation();
   const [ref, inView] = useInView();
   const firstVariant = {
-    visible: { opacity: 1, transition: { duration: 0.4 } },
-    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.3 }, x: 0 },
+    hidden: { opacity: 0, x: -200 },
   };
   const secondVariant = {
-    visible: { opacity: 1, transition: { duration: 0.4, delay: 0.1 } },
-    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.4 }, y: 0 },
+    hidden: { opacity: 0, y: 50 },
   };
   const thirdVariant = {
-    visible: { opacity: 1, transition: { duration: 0.4, delay: 0.2 } },
-    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.4, delay: 0.1 }, y: 0 },
+    hidden: { opacity: 0, y: 50 },
   };
   const fourthVariant = {
-    visible: { opacity: 1, transition: { duration: 0.4, delay: 0.3 } },
-    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.4, delay: 0.2 }, y: 0 },
+    hidden: { opacity: 0, y: 50 },
   };
 
   useEffect(() => {
@@ -31,7 +31,7 @@ const Skills = () => {
   }, [control, inView]);
 
   return (
-    <div id={styles.skills}>
+    <div className={styles.skills}>
       <motion.h2
         ref={ref}
         variants={firstVariant}
@@ -39,7 +39,7 @@ const Skills = () => {
         animate={control}
         className="mb-title"
       >
-        : my skills
+        my skills
       </motion.h2>
       <div id={styles["skills-list"]}>
         <motion.p

@@ -9,24 +9,24 @@ const About = () => {
   const control = useAnimation();
   const [ref, inView] = useInView();
   const firstVariant = {
-    visible: { opacity: 1, transition: { duration: 0.4 } },
-    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.3 }, x: 0 },
+    hidden: { opacity: 0, x: -200 },
   };
   const secondVariant = {
-    visible: { opacity: 1, transition: { duration: 0.4, delay: 0.1 } },
-    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.4 }, y: 0 },
+    hidden: { opacity: 0, y: 50 },
   };
   const thirdVariant = {
-    visible: { opacity: 1, transition: { duration: 0.4, delay: 0.2 } },
-    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.4, delay: 0.1 }, y: 0 },
+    hidden: { opacity: 0, y: 50 },
   };
   const fourthVariant = {
-    visible: { opacity: 1, transition: { duration: 0.4, delay: 0.3 } },
-    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.4, delay: 0.2 }, y: 0 },
+    hidden: { opacity: 0, y: 50 },
   };
   const fifthVariant = {
-    visible: { opacity: 1, transition: { duration: 0.4, delay: 0.4 } },
-    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.3, delay: 0.3 }, x: 0 },
+    hidden: { opacity: 0, x: 200 },
   };
 
   useEffect(() => {
@@ -44,7 +44,7 @@ const About = () => {
         initial="hidden"
         animate={control}
       >
-        : about me
+        about me
       </motion.h2>
       <motion.div
         ref={ref}
@@ -54,8 +54,9 @@ const About = () => {
         className={`${styles["first-paragraph"]} flex`}
       >
         <p>
-          <span className={styles.bold}>Hello!</span> My name is Chang-Ju (but
-          you can call me CJ), and I'm a full-stack web developer currently
+          My name is <span className="c-accent">Chang-Ju</span> (but you can
+          call me CJ), and I'm a{" "}
+          <span className="c-accent">full-stack web developer</span> currently
           based in Toronto, Canada.
         </p>
       </motion.div>
@@ -66,8 +67,11 @@ const About = () => {
         animate={control}
         className={styles["second-paragraph"]}
       >
-        I pursued a degree in Computer Science at the University of Toronto.
-        While there, I had the privilege of interning as a full-stack web
+        I pursued a degree in{" "}
+        <span className="c-accent">
+          Computer Science at the University of Toronto
+        </span>
+        . While there, I had the privilege of interning as a full-stack web
         developer at a start-up, where I discovered my passion for building
         things on the web.
       </motion.p>
@@ -79,8 +83,8 @@ const About = () => {
       >
         My eagerness to constantly be learning and improving myself has helped
         me endure countless online tutorials and complete fascinating projects.
-        Currently, I am focused on the front-end side of the web development
-        spectrum, experimenting with various tools and libraries to create
+        Currently, I am focused on the <span className="c-accent">front-end side of the web development
+        spectrum</span>, experimenting with various tools and libraries to create
         awesome UI.
       </motion.p>
       <motion.div
@@ -88,6 +92,7 @@ const About = () => {
         variants={fifthVariant}
         initial="hidden"
         animate={control}
+        className={"flex flex-jc-fe"}
       >
         <Link
           smooth
@@ -95,7 +100,7 @@ const About = () => {
           offset={-140}
           duration={500}
           to="work"
-          className={`${styles["work-link"]} flex flex-ai-c flex-jc-fe`}
+          className={`${styles["work-link"]} flex flex-ai-c`}
         >
           Check out some of my work <BsArrowRight className={styles.arrow} />
         </Link>

@@ -4,9 +4,11 @@
   --c-main: #373A3C;
   --c-sub: #7B7B7B;
   --c-bg: #f6f6f6;
-  --c-bg-sub: #fbfbfb;
+  --c-bg-sub: rgba(244, 244, 244, 0.637);
   --c-border: #dcdcdc;
-  --c-accent: rgb(0, 0, 0);
+  --c-accent: #ff2756;
+  --c-accent-l: #fb5a7d;
+  --c-link: rgb(149, 149, 149);
 
   /* FONTS */
   --f-button: 'Fira Code', monospace;
@@ -62,6 +64,10 @@
   overflow-y: hidden;
 }
 
+.c-accent {
+  color: var(--c-accent);
+}
+
 /* RESET */
 html {
   box-sizing: border-box;
@@ -73,7 +79,6 @@ body {
   min-height: 100%;
   font-family: var(--f-main);
   color: var(--c-main);
-  background-color: var(--c-bg);
 }
 
 *, *::before, *::after {
@@ -91,10 +96,8 @@ input:focus, textarea:focus {
 
 h1 {
   font-size: clamp(5rem, 9vw, 9rem);
-  font-weight: 400;
-  margin-bottom: 1rem;
-  font-family: var(--f-logo);
-
+  font-weight: 500;
+  font-family: var(--f-main);
 }
 
 h2 {
@@ -104,7 +107,7 @@ h2 {
 
 h3 {
   font-size: clamp(1.5rem, 3vw, 2.4rem);
-  font-weight: 100;
+  font-weight: 200;
   width: clamp(24rem, 40vw, 34rem);
   margin: auto;
   margin-bottom: 3rem;
@@ -112,7 +115,7 @@ h3 {
 }
 
 h4 {
-  font-size: clamp(1.3rem, 2vw, 1.5rem);
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
   font-weight: 300;
   margin-bottom: 0.1rem;
   color: var(--c-main);

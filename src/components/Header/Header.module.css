@@ -2,28 +2,26 @@
     padding-right: clamp(2rem, 3vw, 3rem);
     position: fixed;
     width: 100%;
-    background-color: rgba(245, 245, 245, 0.95);
+    background-color: rgba(255, 255, 255, 0.95);
     z-index: 10;
 }
 
 .logo-container {
     width: clamp(6rem, 9vw, 9rem);
     height: clamp(6rem, 9vw, 9rem);
-    background-color: var(--c-main);
+    background-color: transparent;
     position: relative;
     z-index: 30;
     cursor: pointer;
 }
 
-.logo-container:hover p {
-    transition: 0.2s;
-}
-
 .logo-container p {
-    color: white;
+    color: var(--c-main);
     font-size: clamp(1.5rem, 2vw, 2rem);
-    font-weight: 600;
+    font-weight: 500;
     font-family: var(--f-logo);
     letter-spacing: .1rem;
     margin-bottom: 0;
+    border-bottom: .2rem solid var(--c-accent-l);
+    line-height: clamp(1.8rem, 2.1vw, 2.3rem);
 }

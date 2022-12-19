@@ -1,6 +1,11 @@
-#skills {
+.skills {
     max-width: 115rem;
     margin: auto;
+}
+
+.skills h2 {
+    border-left: clamp(.3rem, .5vw, .5rem) solid var(--c-accent-l);
+    padding-left: clamp(1rem, 1.5vw, 2rem);
 }
 
 #skills-list p {
@@ -35,13 +40,8 @@
     background-color: var(--c-bg-sub);
     color: var(--c-main);
     padding: clamp(2rem, 2vw, 3rem);
-    border-left: 3px solid var(--c-border);
+    /* border-left: clamp(.3rem, .4vw, .5rem) solid var(--c-accent-l); */
 }
-
-/* .experience:hover {
-    transition: .5s;
-    border-color: var(--c-accent);
-} */
 
 .experience-title {
     font-size: clamp(1.6rem, 2vw, 2.7rem);
@@ -59,7 +59,7 @@
     font-size: clamp(1.4rem, 1.5vw, 2.5rem);
     font-weight: 400;
     margin-bottom: 1rem;
-    color: var(--c-sub);
+    color: var(--c-accent-l);
 }
 
 .experience-description {
@@ -73,7 +73,7 @@
     width: clamp(1.4rem, 1.5vw, 1.8rem);
     height: auto;
     margin-right: clamp(.6rem, 1vw, 1.2rem);
-    color: var(--c-accent);
+    color: var(--c-accent-l);
 }
 
 @media screen and (min-width: 50em) {

@@ -1,13 +1,19 @@
 .contact {
-    max-width: 80rem;
+    max-width: 65rem;
     margin: auto;
+    text-align: center;
+}
+
+.contact h2 {
+    font-weight: 500;
+    margin-bottom: clamp(1rem, 1.8vw, 1.8rem);
 }
 
 .contact p {
     line-height: 1.8rem;
     letter-spacing: 0.1rem;
-    margin-bottom: clamp(1rem, 1.2vw, 1.2rem);
-    color: var(--c-accent);
+    margin-bottom: clamp(1rem, 1.5vw, 2.4rem);
+    color: var(--c-sub);
     font-size: clamp(1.3rem, 1.8vw, 1.8rem);
     font-weight: 400;
 }
@@ -16,7 +22,7 @@
     border: none;
     background-color: transparent;
     padding: 1.2rem 0;
-    padding-bottom: clamp(0.1rem, 0.5vw, 0.5rem);
+    padding-bottom: 0rem;
     color: var(--c-main);
     font-family: var(--f-main);
     font-size: clamp(1.2rem, 1.6vw, 1.6rem);
@@ -42,31 +48,34 @@
 .contact-form textarea {
     display: block;
     width: 100%;
-    height: 19rem;
-    margin-bottom: clamp(1.5rem, 2vw, 2rem);
+    height: 15rem;
+    line-height: 2rem;
 }
 
 .contact-form input:focus, .contact-form textarea:focus {
-    transition: .2s;
-    border-color: var(--c-main);
+    border-bottom: 2px solid var(--c-main);
 }
 
 .submit-btn {
     width: 100%;
     height: 4.5rem;
-    background-color: transparent;
-    border: 1px solid var(--c-main);
+    background-color: var(--c-accent-l);
+    border: 1px solid var(--c-accent-l);
     text-transform: uppercase;
     font-family: var(--f-button);
-    font-weight: 500;
-    font-size: 1.6rem;
+    font-weight: 400;
+    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+    letter-spacing: .3rem;
     cursor: pointer;
+    max-width: 40rem;
+    margin-top: clamp(2rem, 4vw, 4.5rem);
+    color: white;
 }
 
 .submit-btn:hover {
-    transition: .3s;
-    background-color: var(--c-main);
-    color: var(--c-bg);
+    transition: .2s;
+    border: 1px solid var(--c-accent);
+    background-color: var(--c-accent);
 }
 
 .flex-wrapper {
@@ -84,10 +93,6 @@
     }
 
     .contact-form {
-        text-align: right;
-    }
-
-    .submit-btn {
-        width: 40%;
+        text-align: center;
     }
 }

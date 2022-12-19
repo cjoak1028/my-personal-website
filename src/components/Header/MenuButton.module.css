@@ -31,10 +31,6 @@
     top: 1rem;
 }
 
-.menu-button.open span {
-    background-color: white;
-}
-
 .menu-button.open span:nth-child(1) {
     transform: rotate(45deg);
     top: 0.6rem;
@@ -52,3 +48,6 @@
     left: 0.1rem;
 }
 
+.menu-button.open {
+    opacity: 0.5;
+}

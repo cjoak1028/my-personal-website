@@ -1,17 +1,17 @@
-#app-container {
+.app-container {
     padding: 0 8%;
     flex: 1;
     margin-top: clamp(6rem, 9vw, 9rem);
 }
 
 @media screen and (min-width: 37.5em) {
-    #app-container {
+    .app-container {
         padding: 0 10%;
     }
 }
 
 .section {
-    margin: clamp(10rem, 15vw, 20rem) 0;
+    margin-bottom: clamp(15rem, 25vw, 35rem);
 }
 
 .hero-section {
@@ -19,6 +19,7 @@
     justify-content: center;
     align-items: center;
     height: calc(100vh - clamp(6rem, 9vw, 9rem));
+    margin-bottom: clamp(10rem, 12vw, 15rem);
 
 }
 
@@ -31,12 +32,12 @@
     transform: rotate(45deg)
 }
 
-#attribution {
+.attribution {
     margin: auto;
     text-align: center;
 }
 
-#attribution p {
+.attribution p {
     font-family: var(--f-button);
     font-size: 1em;
     color: var(--c-main);
@@ -44,32 +45,26 @@
     margin-bottom: 1rem;
 }
 
-#links {
+.links {
     margin-bottom: 1em;
 }
 
-#links img {
-    width: 1.8em;
+.links *:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.icon {
+    width: 1.8rem;
     height: auto;
+    color: var(--c-main);
 }
 
-#links img:hover {
-    opacity: 50%;
-    transition: .2s;
-}
-
-#links *:not(:last-child) {
-    margin-right: 1.2rem;
-}
-
-#links span {
-    height: 1px;
-    width: 100%;
-    background-color: var(--c-main);
+.icon:hover {
+    transform: scale(1.2);
 }
 
 @media screen and (min-width: 65em) {
-    #links {
+    .links {
         display: none;
     }
 }

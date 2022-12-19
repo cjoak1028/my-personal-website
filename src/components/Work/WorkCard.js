@@ -1,10 +1,36 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./WorkCard.module.css";
 import { BiLinkExternal } from "react-icons/bi";
+import { BsGithub } from "react-icons/bs";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
-const WorkCard = ({ data }) => {
+const WorkCard = ({ data, delay }) => {
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+  const variant = {
+    visible: {
+      opacity: 1,
+      transition: { duration: 0.3, delay: Number(delay) },
+      y: 0,
+    },
+    hidden: { opacity: 0, y: 50 },
+  };
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    }
+  }, [control, inView]);
+
   return (
-    <div className={`${styles["work-card"]} flex flex-d-c flex-jc-sb`}>
+    <motion.div
+      ref={ref}
+      variants={variant}
+      initial="hidden"
+      animate={control}
+      className={`${styles["work-card"]} flex flex-d-c flex-jc-sb`}
+    >
       <div>
         <h4>
           <span className={styles["work-id"]}>{data.id}.</span>{" "}
@@ -21,22 +47,15 @@ const WorkCard = ({ data }) => {
           </div>
           <div className={`${styles["work-links"]} flex flex-ai-c`}>
             <a href={data.repo} className={styles["work-link"]}>
-              <img
-                className={styles["github-logo"]}
-                src="/assets/logos/github.png"
-                alt="github logo"
-              />
+              <BsGithub className={styles["github-icon"]} />
             </a>
             <a href={data.link} className={styles["work-link"]}>
-              <BiLinkExternal
-                className={styles["link-icon"]}
-                color={"#373A3C"}
-              />
+              <BiLinkExternal className={styles["link-icon"]} />
             </a>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

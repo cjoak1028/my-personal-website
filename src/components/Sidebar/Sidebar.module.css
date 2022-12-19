@@ -12,22 +12,34 @@
 #sidebar-content img {
     width: 2rem;
     height: auto;
+    opacity: 0.7;
 }
 
 #sidebar-content img:hover {
-    opacity: 50%;
     transition: .2s;
+    opacity: 1;
+    transform: scale(1.2);
 }
 
 #sidebar-content span {
     display: block;
-    width: 1px;
+    width: 0.1rem;
     height: 10em;
     background-color: var(--c-main);
+    opacity: 0.6;
 }
 
 #sidebar-content>*:not(:last-child) {
-    margin-bottom: 1.2em;
+    margin-bottom: 1.6em;
+}
+
+.icon {
+    color: var(--c-main);
+}
+
+.link:hover {
+    transition: .2s;
+    transform: scale(1.1);
 }
 
 @media screen and (min-width: 65em) {

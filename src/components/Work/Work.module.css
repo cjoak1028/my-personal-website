@@ -3,6 +3,11 @@
     margin: auto;
 }
 
+.work h2 {
+    border-left: clamp(.3rem, .5vw, .5rem) solid var(--c-accent-l);
+    padding-left: clamp(1rem, 1.5vw, 2rem);
+}
+
 .work-gallery {
     display: grid;
     grid-template-columns: 1fr;

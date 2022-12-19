@@ -17,7 +17,7 @@ const Navigation = () => {
             duration={500}
             to="about"
           >
-            : about
+            about
           </Link>
         </li>
         <li className={styles["nav-item"]}>
@@ -30,7 +30,7 @@ const Navigation = () => {
             duration={500}
             to="skills"
           >
-            : skills
+            skills
           </Link>
         </li>
         <li className={styles["nav-item"]}>
@@ -43,7 +43,7 @@ const Navigation = () => {
             duration={500}
             to="work"
           >
-            : work
+            work
           </Link>
         </li>
         <li className={styles["nav-item"]}>
@@ -56,7 +56,7 @@ const Navigation = () => {
             duration={500}
             to="contact"
           >
-            : contact
+            contact
           </Link>
         </li>
         <li>

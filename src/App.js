@@ -7,6 +7,7 @@ import Work from "./components/Work/Work";
 import Contact from "./components/Contact/Contact";
 import Sidebar from "./components/Sidebar/Sidebar";
 import styles from "./App.module.css";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 function App() {
   const [mQuery, setMQuery] = useState({
@@ -40,7 +41,7 @@ function App() {
       <Header mQuery={mQuery} />
       <div className="flex">
         <Sidebar />
-        <div id={styles["app-container"]}>
+        <div className={styles["app-container"]}>
           <section className={styles["hero-section"]}>
             <Hero />
           </section>
@@ -60,16 +61,14 @@ function App() {
           <section id="contact" className={styles["section"]}>
             <Contact />
           </section>
-          <div id={styles.attribution}>
-            <div id={styles.links} className="flex flex-ai-c flex-jc-c">
-              <span></span>
+          <div className={styles.attribution}>
+            <div className={`${styles.links} flex flex-ai-c flex-jc-c`}>
               <a href="https://github.com/cjoak1028">
-                <img src="/assets/logos/github.png" alt="github logo" />
+                <BsGithub className={styles.icon} />
               </a>
               <a href="https://www.linkedin.com/in/cj-kim-966351255/">
-                <img src="/assets/logos/linkedin.png" alt="linkedin logo" />
+                <BsLinkedin className={styles.icon} />
               </a>
-              <span></span>
             </div>
             <p>Designed + Built by CJ KIM</p>
           </div>

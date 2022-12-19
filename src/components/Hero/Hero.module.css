@@ -7,17 +7,24 @@
     text-align: center;
 }
 
-.job-title {
-    color: var(--c-accent);
-    font-weight: 300;
+.hero-text h1 {
+    margin-bottom: clamp(0.5rem, 1vw, 1rem);
 }
 
-.last-name {
-    font-family: var(--f-main);
+.hero-text h4 {
+    color: var(--c-accent-l);
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: .2rem;
 }
+
+/* .greeting {
+    border-bottom: 2px solid var(--c-accent);
+} */
 
 .avatar-outline {
-    border: 2px dotted #d4d4d4;
+    border: 2px dotted #d9d9d9b3;
     border-radius: 50%;
     width: clamp(17rem, 23.5vw, 29rem);
     height: clamp(17rem, 23.5vw, 29rem);

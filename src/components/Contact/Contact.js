@@ -7,16 +7,16 @@ const Contact = () => {
   const control = useAnimation();
   const [ref, inView] = useInView();
   const firstVariant = {
-    visible: { opacity: 1, transition: { duration: 0.4 } },
-    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.3 }, y: 0 },
+    hidden: { opacity: 0, y: 50 },
   };
   const secondVariant = {
-    visible: { opacity: 1, transition: { duration: 0.4, delay: 0.1 } },
-    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.4 }, y: 0 },
+    hidden: { opacity: 0, y: 50 },
   };
   const thirdVariant = {
-    visible: { opacity: 1, transition: { duration: 0.4, delay: 0.2 } },
-    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.4, delay: 0.1 }, y: 0 },
+    hidden: { opacity: 0, y: 50 },
   };
 
   useEffect(() => {
@@ -34,17 +34,9 @@ const Contact = () => {
         animate={control}
         className={`${styles["contact-title"]} mb-title`}
       >
-        CONTACT ME !
+        MESSAGE ME
       </motion.h2>
       <div className={styles["form-container"]}>
-        <motion.p
-          ref={ref}
-          variants={secondVariant}
-          initial="hidden"
-          animate={control}
-        >
-          I’m looking for new opportunities, so feel free to contact me!
-        </motion.p>
         <motion.form
           ref={ref}
           variants={thirdVariant}

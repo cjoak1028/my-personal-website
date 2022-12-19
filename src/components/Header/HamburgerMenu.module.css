@@ -5,7 +5,7 @@
     right: 0px;
     left: 0px;
     height: 0;
-    background-color: var(--c-main);
+    background-color: rgb(247, 247, 247);
     z-index: 20;
     transition: .3s;
     display: flex;
@@ -24,7 +24,7 @@
 
 .hamburger-menu.open .menu-list {
     z-index: 40;
-    color: var(--c-border);
+    color: var(--c-main);
     display: block;
     list-style: none;
     text-align: center;
@@ -37,21 +37,22 @@
 }
 
 .link {
-    font-weight: 200;
+    font-weight: 300;
     padding-bottom: .5rem;
     cursor: pointer;
+    color: var(--c-link);
 }
 
 .link:hover {
-    border-bottom: 1px solid white;
+    color: var(--c-accent);
 }
 
 .resume-btn {
     display: block;
     margin: auto;
-    background-color: transparent;
-    border: 1px solid var(--c-border);
-    color: var(--c-border);
+    background-color: var(--c-accent-l);
+    border: 1px solid var(--c-accent-l);
+    color: white;
     padding: 1rem 2rem;
     text-transform: uppercase;
     cursor: pointer;
@@ -65,11 +66,12 @@
 
 .resume-btn:hover {
     transition: 0.2s;
-    background-color: rgba(70, 70, 70, 0.9);
+    border-color: var(--c-accent);
+    background-color: var(--c-accent);
 }
 
 .resume-btn:visited {
-    color: var(--c-border);
+    color: white;
 }
 
 @media screen and (min-width: 37.5em) {
