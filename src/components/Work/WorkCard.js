@@ -46,12 +46,27 @@ const WorkCard = ({ data, delay }) => {
             })}
           </div>
           <div className={`${styles["work-links"]} flex flex-ai-c`}>
-            <a href={data.repo} className={styles["work-link"]}>
-              <BsGithub className={styles["github-icon"]} />
-            </a>
-            <a href={data.link} className={styles["work-link"]}>
-              <BiLinkExternal className={styles["link-icon"]} />
-            </a>
+            {data.repo === "" ? (
+              <a href={data.repo} className={`${styles["work-link"]} disabled`}>
+                <BsGithub className={styles["github-icon"]} color="#DCDCDC" />
+              </a>
+            ) : (
+              <a href={data.repo} className={`${styles["work-link"]}`}>
+                <BsGithub className={styles["github-icon"]} />
+              </a>
+            )}
+            {data.link === "" ? (
+              <a href={data.link} className={`${styles["work-link"]} disabled`}>
+                <BiLinkExternal
+                  className={styles["link-icon"]}
+                  color="#DCDCDC"
+                />
+              </a>
+            ) : (
+              <a href={data.link} className={`${styles["work-link"]}`}>
+                <BiLinkExternal className={styles["link-icon"]} />
+              </a>
+            )}
           </div>
         </div>
       </div>

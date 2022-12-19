@@ -68,6 +68,10 @@
   color: var(--c-accent);
 }
 
+.disabled {
+  pointer-events: none;
+}
+
 /* RESET */
 html {
   box-sizing: border-box;
